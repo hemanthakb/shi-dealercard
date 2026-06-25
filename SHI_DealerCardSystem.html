@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Dealer Card System - SHI</title>
+<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAREBIQEBATEBAVEBIaEBEVEBAQDxASGxYWGxkXGRkaHDQgGiAxIBkZITEhJSkrLzAuGx8zOD8sNyguMCsBCgoKDg0OGhAQGi0dHyIrLS0tLS0tKy0tKy0rLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0rLf/AABEIAMgAyAMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEDBAUHAgj/xABBEAABAwICBgQKCAYDAQAAAAABAAIDBBESIQUGMUFRYRMicaEHMlJTcoGRkqLRFRYjQrHB4fAUFzNUgpNiwtI0/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAEEAgMFBgf/xAAxEQEAAgIBAwQAAwcEAwAAAAAAAQIDEQQSITEFE0FRFGGhBhUWIjJxgSNCUpE0scH/2gAMAwEAAhEDEQA/AI+uS+niAgICAgICAgICAgvmkf0Qmt9mZCzF/wAwL29hU9M620xmrOTo33hYWMN0952KQQEBAQEBAQEBAQEBAQEBAQEBAQEBAREzqNup1GrttCCLD9q2PpdmePxiO2xLVemn+m8dTnT+8fc+N6csVD4eyjvApBAQEBAQEBAQEBAQEBAQEBAQEBAQEG01Z0f/ABNXDDa4c8F/DA3rO7gs8Vdyo+oZ/Z49rO9OYCLbrLpfD5/EzvbgGn6A09TNCcgyQhvonNvcQuZevTMw+h8HP72Ct2AsVsQEBAQEBAQEBAQEBAQEBAQEBAQEBJPh0LwS6OvJNUkZNAYzhc5u7g32q3xq/LzP7Q8jtXFH+XTlbeWcs8LGjsM0VQBk9ha70m7O4/CqfJr8vV/s/n/lnHPwgSqvSCAgICAgICAgICAgICAgICAh86emMLiAMyTYdqMbWikNt9W6jg33gsdqE+p4fs+rdRwb7wTaP3nh+z6t1HBvvBNk+qYfEOt6laLNNRxxuHXN3P8ASdn+Fh6l1MUarp5D1Hke/nteG9WxQ+Ua8IGjunoZLC7o/tG/47fhutWau4dP0vP7XJrPxLii5z3vxsUeCezYUuhp5GB7GgtOwlzQm1PJzsWO3TaV76u1Pkj32ptrj1LBPyr9XKjyW+8E2j954Y+Vms0LNEwvfhABGx1ym23DzaZbRWJa5SuCAgICAgICAgICAkJjt3bXVmmx1DSdjBiP5d6xlzvUcvRi19pusXluwh2ZFBB0krGcXZ9m/uWzFXdtMMlpisyngC6sOYKR4kYCC05gggjiEnumszWYl8/6aoTT1EsJ+5I4Dm37p9lly8lemX0Th5vew1uxGMJIAzJNh2rGfCxe/TEz9OiUsAjY1g2NaAtbx2bJ7l5tZeRpjUCmTtMozrjUf04hzc7vA/NTDuek4p3N0ZWTuiAgICAgICAgICAh5hLtUabDE6Q7Xuy9EfrdYS876rm6rxX6b5Q5Ag3uqlPd7pOAsO0/vvVvi177VeTbtpJ1fU1UBByfwr6OwVEc4GUrLO9Nv6EexUuTXU7et/Z/P1Y5xz8f/Uc1Zpsc4J2MGI9u7vVWXS9Ry9GGY+ZTZYPLiIFKYjvpAdOVPSTvduBwt7Bksoet4OL28UQwVK2ICAgICAgICAgIKtaSbDMk5KGNrdNZdEooBHGxg+60DtO9Yy8dnv15JsvqGkUiZ6Bp8EDeLusfXs7rLp4K6o52W27NitrUqpBBFvCNo7pqF7gLuiIe3sHjfCStWavVV0/SM/tciI+J7INqlTYYjIdr3ZeiL/ndcv8AN2fVM3VeK/TeqHJEGLpKo6OF794abduwd6mFji4+vNEOerJ7CI1UUpEBAQEBAQFHg13SHVPQdPWOMT6gwzfdbgDmvHI328lvxY4v5cv1Hm5uN/NFOqv90s/laz+6d/rHzW6ONH24/wDEV9f0fqp/K5n907/WPmn4b8z+Ibz/ALP1XqPwaRxyNeahzsJvbowLndvT8L+bXm9evenT0fq331Yb50+4Pmsfwn5uX+KtPwfVgedPuD5p+E/NH4qfoGrDfOnswj5pHFj7J5M/TfgWyVuIVVVIICC1UsaWOD82lpxX2YbZrG0x0yypMxMTDnlPC2NrWN8VosL2uuTbt4de+SbzuVxYsBBdZq5/HMcwyGJrXNJIaHYjnltVjDi6u7KnN/C26oja1/K5n907/WPmrH4WNeVv+Irf8P1P5Ws/unf6x80/DfmfxFb/AIfq0+sup9NRR45Kpznn+nGI24nn25Dmtd8EV77XeF6rm5NumKdvmdoWq7viAgICAmj8nqORzXBzSWuBBDgSCDxCVmY8ML0i8dNo7Ot6j64CqAgnIbUAZHYJgN458R+xfxZep4z1P0y3Ht1071/9Jmt7jCIESIMSq0jFEQ2R+EkXAs45eoLXbLWvlnXHa3hZ+nKbznwP+Sx9/H9svYv9H05Tec+B/wAk9/H9p9i/0fTlN5z4H/JPfx/aPZv9H05Tec+B/wAk/EY/s9m/0wtLaZidE5sb7udl4rhlv2hasues07M8WG0WiZRlUV6fIoBBMtAU+CBvF3WPr2d1l08Eao52a27Nit7T+bRa1ayxUUd3daVw+zjvm7meA5rXkyRWHQ4PBvybdvHzLjGldJS1MrppnYnn2NHkgbgufe02l7fjcbHgpFaMRYrIgICAgICD1FI5rg5pLXAgtcCQQeISJ13hhkxxes1t4dc1G1wbVAQTENqQMjsEw4jnxH7F/Fmi0d3i/U/TLceeuv8ATP6Jmt7jChKikQjTNR0k7zuBsOwLl5r9VtulhrqumEtLYICAgICAnyfC7RwdJI1g3uHs3rOld26WF7aqnzWgCwyAXWiNRpzN7R3W7WmOiZYWfO4fZx32f8ncB+K15MkUdH0/07Jyrdv6fmXGtIV0k8jpZXF73HMn8BwCoWtt7fBgx4KdFIY6wWNdtClAgICAgICAojsd201ZhLqlhFxg6188rWt32U76e8Of6lesYen7dk0JpYSjA82kA9Tx81dw5up4fNi6ZbhWVdjaSqOjie/eG5duwd615bdNdtmOu7aQRcqXTgUAgICAgICkbvVanvI55+6LDtP6X9qtcWu56lbk21GjXLW2OjbgZZ9Q4dVm5g8p3LlvVnLl6I/Nv9O9OvybbntVx6sqpJXukkcXvcbucdpVC1ptO5e2w4a4qxWsaiFlYt3b4FKOwgICAgICAgIJZqhTWjfIdrnWHYP1/BYy896tl3eK/SQtcQQQbEHIjckT094cae/aUs0LpYSjA/KQex449qv4c3V2lRzYZrO4V1gglkY1kbcWd3ZtGzZt/eSnkUm1e0IwWrW3eWh+hKnzfxM+apzgv9LXv1+z6EqfN/Ez5p7GT6Pfp9n0JU+b+JnzT2Mn0e/T7PoSp838TPmk4L/Sffr9rNTo2aNuJ7MLb7cTT+ai+K1I8JrlrafLFWpsEBPKfyXNLa0NoacRRWdVPGI7xEDsLudrWH7N2t4x17NvD9OtycnVb+mHM6id0jnPe4ue43c43JJVeZ29hhw1x11C2sWfyKQQEBAQEBAQEADcFCLTqJdE0fT9HEyPg0X7d/esZeO5GT3LzZkKPDR5VY4ggg2IORG5ZROvCJ79pTrRz3OiY5/jFoJ3LqY9zXu5l4iLdmStjEQEBCUb1rqM2R8OsfwH5qlyb/C3x6/KPqktiC1VSFsb3AElrHG3YLrKvedNuGsWvES51I8uJc4kkm5JJJJUxGp7vY46RWsRV5Us+4h4EBAQEBAQEBAQbHV+m6SoYNzTid6v1solR9Qy+3hlO1g8rM7E8TpH5r9BT9JIxnF2fZv7lsx16raYZbajaegLrQ5iqAgIKKBBdKVHSTPfuJsOwZBcvLbqtt0sVdV0xVqbBBudW6MPMjnC7Q3DY7y7b3firfGpvur5sk11pybTFCYJ5YTtY9wHEjcfWLLVeurTD3HEzRlw1vDDWKyICAgICAgICAgIJVqfTWa+U/eOFvYNv75LGXA9WzbtFPpIli4vgT52n8m+1UprufIdwsO07fy9qucavfanyLfCTq8qCAgIMLTFR0cL3b7WHaclqy36a7bMVeq2kHXLdKBQkUoTPQNPggbxd1j69ndZdPBTpq52a27udeFfRuCojqAMpWWd6beP+JHsWjk013en9A5G6Tin4QVVnoxAQEBAQEBAQEBQibTrs6Fo2m6OFjN4bn6W096xeQ5V+vLNmUit5FB23pNdCU3RwsG8jE7tP7AXUw06aublt1XlsFuaxBRBbnnaxpe9wa0C7nEgADmVG9eWVKTadV7y53pzXmCaUQsB6EH+ruc70eHNUc+Tq8O9g9Gyxj658/T01wIuDcHYRsKqyr2pas6l6RGpiO6/QwdJIxnF2fZv7lnjru3S13v012ngFl1o8OZPedo14QtG9PQyWF3R2kb/AI+N8JK1Zq7q6XpWf2uTXfiXFVznvYncaFHhIpQICAgICAgIQydHOYJWGQ2YHXdkTsRo5EWtimKeUu+sNN5Z9x3yWGnnf3bn+lPrFTeWfccmiPTM8fDP0HpGGpqI4WEkudn1SOqMz3BbMVOq2mjk8TLgxzezpYXUhwPKqkEGq07p2CjjxzOt5LBYveeACwveKx3WeNxcnIt00hyHWfWqetdZxwQg9WIE27XeUVRyZZs9nwfTMXGrvzb7aFadOn8NlonTD4Dbxo97CdnZwRQ5XArljfymVFWRytxRm43jeORWM9peczce+K2rJLqrTXe6Q7ALDtP771b41e/U53Jv8Qk6vKbxIwOBaRcEEEcQnmE1mazEw+f9NUJp6iWE/ce4Dm37p9lly8lemX0Th5/ewVuwljPha8CAgICAgICAgICAg6J4JNG3dNUkbAGMPPa7/qrfGr8vL/tByP6cUOmK28wonkhEtbddoqW8UVpajeL9SP0jx5fgtGTPWvZ1/T/ScnInqt2q5PpHSEtRIZZnl7zvO4cANwVK15s9lx+LjwUitI7MVY6bomPkTepO3kTXY8r9HVvidjjdY7+B5FROmnLgplrq0Or6h6zQTRiEno57klpItJzad+W7bkr2C1Yrp431P0/Lht1a3VMlZcjQh+TlfhY0bgnjqAMpGlrvSbs7iPdVLk177es/Z/Pulsc/CBqt5ejiRAQEBAQEBAQEBAREzqNu66naN/h6KGMizsOJ/HE7M+y9vUunjr01fPvUM/vci1m3nmaxpe9wa0C7nEgADmVlPbuqVpNp1DmWtuvzpMUNGS1mYdNmHu9HgOe3sVTLn3OqvTcD0bUe5m/6cwiqppS4x4Q0OIu65cSsLVrWN2XsXIzZ9xi7RC8Onwm/R4ri3jYbLCehaj8R0zWfLGkqp2vbGRFd17ePbetkUrMKWTlcmmWMUx5ZUb5GhzpcFgLjDi58VrmIlerkyYqzbK8aMqzI04hZwOY5HMJlpphwOXPIrMW8w81dTIJWxsw9ZpN3A8+HYppWOnctfK5OT3q4qfI2tlikYJA3rHqvYXCzsvYp6N96sL8i+O9ceaNxLqeqPhAIww1puNjZ/wD3/wCvbxW3Hn35c31D0Xt7mD/p0iOQOAc0ggi4IzBCtxLzc1ms6sj3hA0d09DJYXdH9o3/AB2911qy13V0PSuR7PJrP32cTXOe+gQEBAQEBAQEBATyNvqlo3+JrIYrXbjxP4YG5n22t61sw16pUPU88YePaYdl05pyCjjxzOt5LBm954AK/a8RHd4njcXJyL9NIci1n1qnrXWcejhB6sQJt2u8oqjkzTadfD2PB9Lx8aNz3t9tAtetd4dTUeJa6SjkjcXwEZm7oz4p7FtreL9rQ4+Th5cN5vhn/DIoqsSA5FrmmzmncVhemp/Jb4fLjPGpjvHljVn/ANMPY78Fsp/TKlyf/Nxz/c01KLNjvbG4YjwbldRir/uZeqZo/lx78rTZ2NqGljgWvaGusRkRa35LZb+av9lXHmx4uVHR4t5e60uFTHhAJwOsCbD7yxrr25bOVe1eZSaRvy8xF00tpLM6I36MXJJ434KZ1Wm4Rj6+VyI93t0/DbKtLv6+kk1V1vmoiGG8tPfOMnNvNh3dmxbsebpcjn+lY+RG69rOt6L0pBVxY4nB7SLOG9p4OB2K9W0Xr2ePzcfJx8mrRqYcO07o809TNAfuSEN9Ha0+whc3JXptp7zhZ4zYa3YKxWxAQEBAQEBAQE3onv4b/VfTjKISyhuOoc0NiBvhYNpJ+HIcCtuK8U7uX6hw7cq9a+Kx5anSOkJaiQyzPL3nedw4AbgsLWm/ld4/Gx4K9NY1DGWP92/+wmo2b1EsLp5xl0IPMSABbein25ls/J3Nfb/VWhpnNc+R9sTzsGwBMl9/ynC49sdrZL+ZKincZo3gdVoOLMc0rbVJgz8e1uTTJ8R5UZTEzOkeBhDQGDI9p/fFTN/5NQivGm/InJk8fCukaPGyzQA4EFpyGajHk12llzeHW9P9Py8GB5mikIAswh2YydYqZvEVmGmOPltnplt8eVa6lcXNljtjBsRewc1RS0RGpbOXxbTkrmxeYZo9i1OlTvG5VUMu0s3RGlpqWQSwPLXbxta4cHDeFnW81ncKvK4mLk16bQz9atLx1j45w3BKWYZmbW4m7HA8CD8Kzy3i8bhX9O4t+NFqWndfho1qdIQEBAQEBAQEBAQEBB5lNmk8jxUxEy15ZmtJlroK1jiwAk3a4vs9/VsBzW7onu49ObivaIiPO9vUE5JZibZsl8FpHkjfmlqdvLLFyN2jqjW9/o9slvCZbG4a42xvtlfmsZiYnW26mSLcf3Nd3iOY5h4sejL22kkII4LKaT8NNM86mLQ8uqwDHcHC9gLjjf1b257M0in0xycuuOa9UdpUFUS1lhZzmuJLpHhjQPWp6J3MI/FRalemPOyWrIYxwFsV7kyPLARzHFRFJ3MGTl6rW0R5bCmddoNrXF7YsXetVo06/HnqxxZcWPluEBAQEBAQEBAQEBAQEBAQeZBcEcQeCRqGGSu6zEMVlPbB1XHA0tHiZggc+S2zeO7nRxOmazrxv9XiClwkGz3Bt8DSY7Nv60m0aY4+JatotMb14/ypHSENLLyFpa4W+zyv61PXG9opw8taTTfZ6jpbXvjcSzCCTHk3lmk3+pTTh2iO/eVf4YZXa4gR4LdTMZZ7eSRePtM8Pq1WYWzRdVoAeC0EB32ZuDtBF1MZI3MsLcC3RFa9pj5VFGQ1rW9IMOLP7M3BJvcXURkjcyj8BeMdaV+GXTRhrA0AgAWF7XWu07dLj4vbxxVdWKwIgQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQf/2Q==">
+<link rel="apple-touch-icon" href="data:image/jpeg;base64,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">
+<style>
+  :root {
+    --red: #C8102E;
+    --red-dark: #a00d24;
+    --red-light: #f8e8eb;
+    --gold: #B8974A;
+    --gold-light: #f5eed8;
+    --white: #ffffff;
+    --bg: #f4f5f7;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --text-sub: #555770;
+    --border: #e2e4ea;
+    --green: #1a8a4a;
+    --green-light: #e8f7ee;
+    --shadow: 0 2px 12px rgba(0,0,0,0.09);
+    --radius: 14px;
+    --radius-sm: 8px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 16px; }
+  
+  /* SCREENS */
+  .screen { display: none; min-height: 100vh; flex-direction: column; }
+  .screen.active { display: flex; }
+
+  /* HEADER */
+  .app-header {
+    background: var(--red);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 3px 10px rgba(200,16,46,0.3);
+    position: sticky; top: 0; z-index: 100;
+    min-height: 64px;
+    padding: 10px 16px;
+  }
+  .app-header img { width: 44px; height: 44px; border-radius: 8px; object-fit: cover; border: 2px solid var(--gold); flex-shrink: 0; }
+  .app-header-text { flex: 1; }
+  .app-header-text h1 { color: #fff; font-size: 15px; font-weight: 700; letter-spacing: 0.3px; line-height: 1.2; }
+  .app-header-text p { color: rgba(255,255,255,0.8); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .header-right { display: flex; align-items: center; gap: 8px; }
+  .user-badge { background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; padding: 4px 10px; color: #fff; font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .btn-logout { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #fff; border-radius: 8px; padding: 6px 10px; font-size: 12px; cursor: pointer; white-space: nowrap; }
+  .btn-logout:active { background: rgba(255,255,255,0.25); }
+
+  /* CONTENT */
+  .content { flex: 1; padding: 16px; overflow-y: auto; }
+
+  /* CARDS */
+  .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; margin-bottom: 14px; border: 1px solid var(--border); }
+  .card-title { font-size: 13px; font-weight: 700; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+  .card-title span { font-size: 16px; }
+
+  /* LOGIN SCREEN */
+  #screen-login { background: var(--red); justify-content: center; align-items: center; padding: 24px; }
+  .login-box { background: var(--white); border-radius: 20px; padding: 32px 24px; width: 100%; max-width: 400px; box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+  .login-logo { text-align: center; margin-bottom: 20px; }
+  .login-logo img { width: 80px; height: 80px; border-radius: 14px; object-fit: cover; border: 3px solid var(--gold); }
+  .login-logo h2 { font-size: 18px; font-weight: 800; color: var(--red); margin-top: 10px; }
+  .login-logo p { font-size: 11px; color: var(--text-sub); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .gold-line { height: 3px; background: linear-gradient(90deg, var(--gold), #e8c97a, var(--gold)); border-radius: 2px; margin: 16px 0; }
+  .form-group { margin-bottom: 14px; }
+  .form-group label { display: block; font-size: 12px; font-weight: 700; color: var(--text-sub); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .form-input { width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: var(--radius-sm); font-size: 16px; color: var(--text); background: var(--bg); transition: border-color 0.2s; outline: none; }
+  .form-input:focus { border-color: var(--red); background: #fff; }
+  .btn-primary { width: 100%; padding: 16px; background: var(--red); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 16px; font-weight: 700; cursor: pointer; letter-spacing: 0.5px; transition: background 0.2s; }
+  .btn-primary:active { background: var(--red-dark); }
+  .login-error { color: var(--red); font-size: 13px; text-align: center; margin-top: 10px; font-weight: 600; min-height: 20px; }
+  .import-accounts-btn { width: 100%; padding: 12px; background: var(--bg); color: var(--text-sub); border: 2px dashed var(--border); border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; cursor: pointer; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 6px; }
+  .import-accounts-btn:active { background: var(--border); }
+
+  /* BOTTOM NAV */
+  .bottom-nav { background: var(--white); border-top: 1px solid var(--border); display: flex; box-shadow: 0 -2px 10px rgba(0,0,0,0.07); }
+  .nav-btn { flex: 1; padding: 10px 4px 8px; background: none; border: none; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 3px; color: var(--text-sub); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; transition: color 0.2s; }
+  .nav-btn .nav-icon { font-size: 22px; }
+  .nav-btn.active { color: var(--red); }
+  .nav-btn.active .nav-icon { transform: scale(1.1); }
+
+  /* CSR HOME TABS */
+  .tab-bar { display: flex; background: var(--card); border-radius: var(--radius); padding: 4px; margin-bottom: 16px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+  .tab-btn { flex: 1; padding: 10px 6px; border: none; background: none; border-radius: 10px; font-size: 13px; font-weight: 600; color: var(--text-sub); cursor: pointer; transition: all 0.2s; }
+  .tab-btn.active { background: var(--red); color: #fff; box-shadow: 0 2px 8px rgba(200,16,46,0.3); }
+
+  /* SHOP SELECT */
+  .search-box { position: relative; margin-bottom: 12px; }
+  .search-box input { width: 100%; padding: 13px 14px 13px 42px; border: 2px solid var(--border); border-radius: var(--radius-sm); font-size: 15px; background: var(--white); outline: none; color: var(--text); }
+  .search-box input:focus { border-color: var(--red); }
+  .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 18px; color: var(--text-sub); pointer-events: none; }
+  .shop-list { display: flex; flex-direction: column; gap: 6px; max-height: 60vh; overflow-y: auto; }
+  .shop-item { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 14px 16px; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: all 0.15s; }
+  .shop-item:active { background: var(--red-light); border-color: var(--red); }
+  .shop-icon { width: 36px; height: 36px; background: var(--red-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .shop-name { font-size: 14px; font-weight: 600; color: var(--text); flex: 1; }
+  .shop-arrow { color: var(--text-sub); font-size: 18px; }
+  .last-visit { font-size: 11px; color: var(--text-sub); margin-top: 2px; }
+
+  /* ORDER FORM */
+  .order-header { background: linear-gradient(135deg, var(--red), var(--red-dark)); border-radius: var(--radius); padding: 16px; margin-bottom: 14px; color: #fff; }
+  .order-header h3 { font-size: 16px; font-weight: 700; }
+  .order-header p { font-size: 12px; opacity: 0.85; margin-top: 4px; }
+  .order-header .date-badge { background: rgba(255,255,255,0.2); border-radius: 20px; padding: 4px 12px; font-size: 12px; display: inline-block; margin-top: 8px; border: 1px solid rgba(255,255,255,0.3); }
+
+  .product-row { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 12px 14px; margin-bottom: 8px; }
+  .product-row.has-order { border-color: var(--gold); background: var(--gold-light); }
+  .product-name { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+  .product-code { font-size: 11px; color: var(--text-sub); margin-bottom: 10px; }
+  .qty-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+  .qty-cell { display: flex; flex-direction: column; align-items: center; }
+  .qty-label { font-size: 10px; font-weight: 700; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; text-align: center; }
+  .qty-val { font-size: 18px; font-weight: 700; color: var(--text); }
+  .qty-val.sold { color: var(--red); }
+  .qty-val.suggested { color: var(--green); }
+  .qty-input { width: 100%; padding: 10px 8px; border: 2px solid var(--border); border-radius: 8px; font-size: 18px; font-weight: 700; text-align: center; color: var(--text); background: #fff; outline: none; -moz-appearance: textfield; }
+  .qty-input::-webkit-inner-spin-button, .qty-input::-webkit-outer-spin-button { -webkit-appearance: none; }
+  .qty-input:focus { border-color: var(--red); }
+  .qty-input.order-input { border-color: var(--green); color: var(--green); background: var(--green-light); }
+  
+  .remove-btn { float: right; background: none; border: none; color: #ccc; font-size: 20px; cursor: pointer; padding: 0 0 0 8px; line-height: 1; }
+  .remove-btn:active { color: var(--red); }
+
+  /* ADD PRODUCT PANEL */
+  .add-product-panel { background: var(--card); border-radius: var(--radius); border: 2px dashed var(--border); padding: 14px; margin-top: 8px; }
+  .add-product-panel h4 { font-size: 13px; font-weight: 700; color: var(--text-sub); margin-bottom: 10px; }
+  .product-search-list { max-height: 200px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
+  .product-search-item { padding: 10px 14px; cursor: pointer; font-size: 13px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  .product-search-item:last-child { border-bottom: none; }
+  .product-search-item:active { background: var(--red-light); }
+  .product-search-item .pcode { font-size: 11px; color: var(--text-sub); }
+
+  /* BUTTONS */
+  .btn-green { background: var(--green); color: #fff; border: none; border-radius: var(--radius-sm); padding: 16px; font-size: 16px; font-weight: 700; cursor: pointer; width: 100%; margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .btn-green:active { background: #157a3e; }
+  .btn-red { background: var(--red); color: #fff; border: none; border-radius: var(--radius-sm); padding: 14px; font-size: 15px; font-weight: 700; cursor: pointer; }
+  .btn-red:active { background: var(--red-dark); }
+  .btn-outline { background: transparent; color: var(--red); border: 2px solid var(--red); border-radius: var(--radius-sm); padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .btn-gold { background: var(--gold); color: #fff; border: none; border-radius: var(--radius-sm); padding: 12px 18px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .btn-gold:active { background: #9a7c3a; }
+  .btn-sm { padding: 8px 14px; font-size: 13px; border-radius: 8px; }
+
+  /* HISTORY */
+  .history-item { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 8px; cursor: pointer; }
+  .history-item:active { border-color: var(--red); }
+  .history-shop { font-size: 14px; font-weight: 700; color: var(--text); }
+  .history-meta { font-size: 12px; color: var(--text-sub); margin-top: 3px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .history-badge { background: var(--red-light); color: var(--red); border-radius: 20px; padding: 2px 10px; font-size: 11px; font-weight: 700; }
+  .history-badge.green { background: var(--green-light); color: var(--green); }
+
+  /* DETAIL VIEW */
+  .detail-product { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .detail-product:last-child { border-bottom: none; }
+  .detail-pname { font-size: 13px; font-weight: 600; }
+  .detail-pcode { font-size: 11px; color: var(--text-sub); }
+  .detail-qty { text-align: right; }
+  .detail-qty .qty { font-size: 18px; font-weight: 800; color: var(--red); }
+  .detail-qty .qlabel { font-size: 10px; color: var(--text-sub); }
+
+  /* ADMIN */
+  .admin-section { margin-bottom: 20px; }
+  .admin-section h3 { font-size: 14px; font-weight: 700; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--gold); display: flex; align-items: center; gap: 6px; }
+  .user-card { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
+  .user-info h4 { font-size: 14px; font-weight: 700; }
+  .user-info p { font-size: 12px; color: var(--text-sub); }
+  .user-actions { display: flex; gap: 6px; }
+  .badge-admin { background: var(--red); color: #fff; border-radius: 20px; padding: 2px 10px; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+  .badge-csr { background: var(--gold-light); color: var(--gold); border: 1px solid var(--gold); border-radius: 20px; padding: 2px 10px; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+  .badge-inactive { background: #eee; color: #999; border-radius: 20px; padding: 2px 10px; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+
+  /* TOAST */
+  .toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: var(--text); color: #fff; border-radius: 24px; padding: 12px 24px; font-size: 14px; font-weight: 600; z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.25); opacity: 0; transition: opacity 0.3s; pointer-events: none; white-space: nowrap; }
+  .toast.show { opacity: 1; }
+  .toast.success { background: var(--green); }
+  .toast.error { background: var(--red); }
+
+  /* MODAL */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; display: none; align-items: flex-end; justify-content: center; }
+  .modal-overlay.show { display: flex; }
+  .modal { background: var(--white); border-radius: 20px 20px 0 0; padding: 24px; width: 100%; max-width: 500px; max-height: 90vh; overflow-y: auto; }
+  .modal h3 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+  .modal-btns { display: flex; gap: 10px; margin-top: 16px; }
+  .modal-btns button { flex: 1; }
+
+  /* STATS CARDS */
+  .stats-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+  .stat-card { background: var(--white); border-radius: var(--radius-sm); border: 1.5px solid var(--border); padding: 14px; text-align: center; }
+  .stat-num { font-size: 28px; font-weight: 800; color: var(--red); }
+  .stat-label { font-size: 11px; color: var(--text-sub); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* EMPTY STATE */
+  .empty-state { text-align: center; padding: 40px 20px; color: var(--text-sub); }
+  .empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; }
+  .empty-state h4 { font-size: 16px; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+  .empty-state p { font-size: 14px; }
+
+  /* DIVIDER */
+  .divider { height: 1px; background: var(--border); margin: 16px 0; }
+  
+  /* SELECT INPUT */
+  .form-select { width: 100%; padding: 13px 14px; border: 2px solid var(--border); border-radius: var(--radius-sm); font-size: 15px; color: var(--text); background: var(--bg); outline: none; }
+  .form-select:focus { border-color: var(--red); }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+  /* Step indicators */
+  .step-indicator { display: flex; align-items: center; margin-bottom: 16px; gap: 0; }
+  .step { flex: 1; text-align: center; font-size: 11px; font-weight: 700; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.5px; padding: 8px 4px; border-bottom: 3px solid var(--border); }
+  .step.active { color: var(--red); border-bottom-color: var(--red); }
+  .step.done { color: var(--green); border-bottom-color: var(--green); }
+
+  @media (min-width: 500px) {
+    #screen-login { padding: 40px; }
+    .content { max-width: 600px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- SCREEN: LOGIN -->
+<div class="screen active" id="screen-login">
+  <div class="login-box">
+    <div class="login-logo">
+      <img src="data:image/jpeg;base64,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" alt="SHI Logo">
+      <h2>Dealer Card System</h2>
+      <p>Outlet Stocks Management for CSR</p>
+    </div>
+    <div class="gold-line"></div>
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" class="form-input" id="login-user" placeholder="Enter username" autocomplete="off" autocapitalize="none">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-input" id="login-pass" placeholder="Enter password">
+    </div>
+    <button class="btn-primary" onclick="doLogin()">🔐 Login</button>
+    <div class="login-error" id="login-error"></div>
+    <div class="divider"></div>
+    
+    <!-- SETUP CODE ENTRY -->
+    <div id="setup-code-section">
+      <div style="text-align:center;font-size:12px;font-weight:700;color:var(--text-sub);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px">
+        First Time Setup
+      </div>
+      <div style="display:flex;gap:8px;margin-bottom:8px">
+        <input type="tel" class="form-input" id="setup-code-input" 
+          placeholder="Enter 6-digit setup code" 
+          maxlength="6" 
+          inputmode="numeric"
+          pattern="[0-9]*"
+          style="text-align:center;font-size:22px;font-weight:800;letter-spacing:6px">
+        <button class="btn-primary" style="width:auto;padding:14px 16px;white-space:nowrap" onclick="applySetupCode()">
+          ✓ Apply
+        </button>
+      </div>
+      <div style="text-align:center;font-size:11px;color:var(--text-sub)">Enter the 6-digit code sent by your Admin</div>
+    </div>
+
+    <div class="divider"></div>
+    <button class="import-accounts-btn" onclick="document.getElementById('import-file').click()">
+      📥 Import Accounts File (Android)
+    </button>
+    <input type="file" id="import-file" accept=".json" style="display:none" onchange="importAccounts(this)">
+  </div>
+  <div style="text-align:center;padding:12px 0 6px;font-size:9px;color:rgba(255,255,255,0.25);letter-spacing:0.3px;user-select:none;">© 2026 Hemantha Balasooriya</div>
+</div>
+
+<!-- SCREEN: CSR MAIN -->
+<div class="screen" id="screen-csr">
+  <div class="app-header">
+    <img src="data:image/jpeg;base64,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" alt="SHI">
+    <div class="app-header-text">
+      <h1>Dealer Card System</h1>
+      <p>Outlet Stocks Management</p>
+    </div>
+    <div class="header-right">
+      <span class="user-badge" id="csr-name-badge">CSR</span>
+      <button class="btn-logout" onclick="doLogout()">Exit</button>
+    </div>
+  </div>
+  <div class="content" id="csr-content">
+    <!-- Dynamic content here -->
+  </div>
+  <div class="bottom-nav">
+    <button class="nav-btn active" id="nav-home" onclick="csrNav('home')">
+      <span class="nav-icon">🏠</span>Home
+    </button>
+    <button class="nav-btn" id="nav-neworder" onclick="csrNav('neworder')">
+      <span class="nav-icon">📋</span>New Visit
+    </button>
+    <button class="nav-btn" id="nav-history" onclick="csrNav('history')">
+      <span class="nav-icon">📅</span>History
+    </button>
+    <button class="nav-btn" id="nav-export" onclick="csrNav('export')">
+      <span class="nav-icon">📤</span>Export
+    </button>
+  </div>
+</div>
+
+<!-- SCREEN: ADMIN MAIN -->
+<div class="screen" id="screen-admin">
+  <div class="app-header">
+    <img src="data:image/jpeg;base64,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" alt="SHI">
+    <div class="app-header-text">
+      <h1>Admin Panel</h1>
+      <p>Dealer Card System - SHI</p>
+    </div>
+    <div class="header-right">
+      <span class="user-badge">Admin</span>
+      <button class="btn-logout" onclick="doLogout()">Exit</button>
+    </div>
+  </div>
+  <div class="content" id="admin-content">
+  </div>
+</div>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+  <div class="modal" id="modal-content" onclick="event.stopPropagation()"></div>
+</div>
+
+<script>
+// ============================================================
+// DATA
+// ============================================================
+const MASTER_PRODUCTS = [{"code": "FG000001", "name": "Air Freshener Lavender 150ml X 48 Rs.320"}, {"code": "FG000003", "name": "Air Freshener Lavender 475mlX24 Rs.650"}, {"code": "FG000004", "name": "Air Freshener Rose 150ml X 48 Rs.320"}, {"code": "FG000006", "name": "Air Freshener Rose 475ml X 24 Rs.650"}, {"code": "FG000007", "name": "Air Freshener Strawberry 150mlX48 Rs.320"}, {"code": "FG000008", "name": "Air Freshener Strawberry 475mlX24 Rs.650"}, {"code": "FG000012", "name": "Aqua Fresh Glass Cleaner 500mlx24 Rs.500"}, {"code": "FG000017", "name": "Bar Soap - Pink 650g X 24 Rs.575"}, {"code": "FG000023", "name": "Bar Soap - Yellow 650g X 24 Rs.575"}, {"code": "FG000320", "name": "Natura Papaya Soap 125g X 72 X Rs.550"}, {"code": "FG000693", "name": "Chaya Kohomba Soap 80g X 144 Rs.110"}, {"code": "FG000688", "name": "Chaya Lavender Soap 80g X 144 Rs.110"}, {"code": "FG000691", "name": "Chaya Sandalwood Soap 80g X 144 Rs.110"}, {"code": "FG000689", "name": "Chaya Winter Rose Soap 70g X 144 Rs.110"}, {"code": "FG000761", "name": "Roma Hotel Soap Pink 24PCS*15g*24 Rs.720"}, {"code": "FG000029", "name": "Clomax Bleaching Powder 150g X 36 Rs.200"}, {"code": "FG000030", "name": "Clomax Bleaching Powder 200g X 24 Rs.250"}, {"code": "FG000031", "name": "Clomax Bleaching Powder 500g X 12 Rs.500"}, {"code": "FG000034", "name": "Clomax Lavender 1 Ltr x 12 Rs.550"}, {"code": "FG000035", "name": "Clomax Lavender 100ml X 48 Rs.100"}, {"code": "FG000038", "name": "Clomax Lavender 250ml X 48 Rs.190"}, {"code": "FG000041", "name": "Clomax Lavender 500ml X 24 Rs.350"}, {"code": "FG000044", "name": "Clomax Original 1 Ltr X 12 Rs.550"}, {"code": "FG000045", "name": "Clomax Original 100ml X 48 Rs.100"}, {"code": "FG000049", "name": "Clomax Original 250ml X 48 Rs.190"}, {"code": "FG000053", "name": "Clomax Original 500ml X 24 Rs.350"}, {"code": "FG000089", "name": "D/Powder Jasmin & Lime 40g X 360 Rs.20"}, {"code": "FG000087", "name": "D/Powder Jasmin & Lime 1kg X 24 Rs.320"}, {"code": "FG000058", "name": "D/Powder Araliya & Melon 1kg X 24 Rs.320"}, {"code": "FG000061", "name": "D/Powder Araliya & Melon 200g x 96 Rs.85"}, {"code": "FG000063", "name": "D/Powder Araliya & Melon 400g X 48 Rs165"}, {"code": "FG000799", "name": "D/Powder Araliya & Melon 1kg X 24 Rs.330"}, {"code": "FG000067", "name": "D/Powder Araliya & Melon 40g X 360 Rs.20"}, {"code": "FG000072", "name": "D/Powder Floral & Fruity 1kg X 24 Rs.320"}, {"code": "FG000075", "name": "D/Powder Floral & Fruity 200g x 96 Rs.85"}, {"code": "FG000079", "name": "D/Powder Floral & Fruity 400g X 48 Rs165"}, {"code": "FG000083", "name": "D/Powder Floral & Fruity 40g X 360 Rs.20"}, {"code": "FG000757", "name": "D/Powder Floral & Fruity 2kg X9 Rs.650"}, {"code": "FG000695", "name": "D/Powder Floral & Fruity 2kg X12 Rs.575"}, {"code": "FG000094", "name": "D/Powder Lavender & Peach 1kgX 24 Rs.320"}, {"code": "FG000798", "name": "D/Powder Lavender & Peach 1kgX 24 Rs.330"}, {"code": "FG000097", "name": "D/Powder Lavender & Peach 200gX 96 Rs.85"}, {"code": "FG000801", "name": "D/Powder Lavender & Peach 2kg X12 Rs.620"}, {"code": "FG000696", "name": "D/Powder Lavender & Peach 2kg X12 Rs.575"}, {"code": "FG000101", "name": "D/Powder Lavender & Peach 400gX 48 Rs165"}, {"code": "FG000105", "name": "D/Powder Lavender & Peach 40gX 360 Rs.20"}, {"code": "FG000763", "name": "D/Powder Floral & Fruity 1kg X 18 Rs.350"}, {"code": "FG000764", "name": "D/Powder Araliya & Melon 1kg X 18 Rs.350"}, {"code": "FG000765", "name": "D/Powder Lavender & Peach 1kgX 18 Rs.350"}, {"code": "FG000117", "name": "D/W Liquid-Green 250ml X 48 Rs.250"}, {"code": "FG000717", "name": "D/W Liquid-Refill Orange 500mlX24 Rs.290"}, {"code": "FG000683", "name": "D/W Liquid-Refill Yellow 500mlX24 Rs.290"}, {"code": "FG000671", "name": "D/W Liquid-Refill Green 500ml X24 Rs.290"}, {"code": "FG000124", "name": "D/W Liquid-Green 500ml X 24 Rs.400"}, {"code": "FG000171", "name": "Dharma Jasmine 20 Nos Pack X 144 Rs150"}, {"code": "FG000173", "name": "Dharma Lavender 25 Nos Pack X 144 Rs150"}, {"code": "FG000174", "name": "Dharma Pineapple 25 Nos Pack X 144 Rs150"}, {"code": "FG000175", "name": "Dharma Rose 25 Nos Pack X 144 Rs150"}, {"code": "FG000176", "name": "Dharma S/King 20 Nos Pack X 144 Rs150"}, {"code": "FG000177", "name": "Dharma Strawberry 20 Nos PackX 144 Rs150"}, {"code": "FG000181", "name": "Dish Wash Orange 100g x 144 Rs.60"}, {"code": "FG000185", "name": "Dish Wash Orange 200g X 72 Rs.110"}, {"code": "FG000187", "name": "Dish Wash Orange 50g x 240 Rs.35"}, {"code": "FG000189", "name": "Dish Wash Tub Orange 150g X 96 Rs.100"}, {"code": "FG000192", "name": "Dish Wash Tub Orange 250g X 48 Rs.150"}, {"code": "FG000200", "name": "Dish Wash Tub Orange 500g X 36 Rs.275"}, {"code": "FG000715", "name": "Promo-D/Wash 100g X 4 (Rs.60off) Rs.180"}, {"code": "FG000229", "name": "F/Soft Mellow-Blue 100ml X48 Rs140"}, {"code": "FG000231", "name": "F/Soft Mellow-Blue 40ml X 360 Rs.30"}, {"code": "FG000232", "name": "F/Soft Mellow-Green 100ml X48 Rs140"}, {"code": "FG000233", "name": "F/Soft Mellow-Green 40ml X 360 Rs30"}, {"code": "FG000234", "name": "F/Soft Mellow-MN Dream 100ml X48 Rs140"}, {"code": "FG000235", "name": "F/Soft Mellow-MN Dream 40ml X 360 Rs.30"}, {"code": "FG000237", "name": "F/Soft Mellow-Pink 100ml X48 Rs140"}, {"code": "FG000239", "name": "F/Soft Mellow-Pink 40ml X 360 Rs.30"}, {"code": "FG000241", "name": "F/Soft Mellow-S/Dream 100ml X48 Rs140"}, {"code": "FG000710", "name": "F/Soft Mellow-Pink 500ml X 24 Rs.575"}, {"code": "FG000705", "name": "F/Soft Mellow-Blue 500ml X 24 Rs.575"}, {"code": "FG000706", "name": "F/Soft Mellow-Green 500ml X 24 Rs.575"}, {"code": "FG000707", "name": "F/Soft Mellow-MN Dream 500ml X 24 Rs.575"}, {"code": "FG000712", "name": "F/Soft Mellow-S/Dream 500ml X 24 Rs.575"}, {"code": "FG000704", "name": "F/Soft Mellow-Blue 1 Ltr X 12 Rs.1100"}, {"code": "FG000708", "name": "F/Soft Mellow-MNDream 1 Ltr X 12 Rs.1100"}, {"code": "FG000709", "name": "F/Soft Mellow-Pink 1 Ltr X 12 Rs.1100"}, {"code": "FG000711", "name": "F/Soft Mellow-S/Dream 1 Ltr X 12 Rs.1100"}, {"code": "FG000242", "name": "F/Soft Mellow-S/Dream 40ml X360 Rs30"}, {"code": "FG000245", "name": "Germol Lavender 225ml X 48 Rs.230"}, {"code": "FG000246", "name": "Germol Lavender 500ml X 24 Rs.475"}, {"code": "FG000247", "name": "Germol Rose Pink 225ml X 48 Rs.230"}, {"code": "FG000248", "name": "Germol Rose Pink 500ml X 24 Rs.475"}, {"code": "FG000249", "name": "Germol Yellow 225ml X 48 Rs.230"}, {"code": "FG000250", "name": "Germol Yellow 500ml X 24 Rs.475"}, {"code": "FG000268", "name": "Halo Hand Wash - Green 250ml X 24 Rs.350"}, {"code": "FG000271", "name": "Halo Hand Wash - Green 500ml X 12 Rs.500"}, {"code": "FG000276", "name": "Halo Hand Wash - Red 250ml x 24 Rs.350"}, {"code": "FG000280", "name": "Halo Hand Wash - Red 500ml X 12 Rs.500"}, {"code": "FG000282", "name": "Halo Hand Wash - Yellow 250ml X 24 Rs350"}, {"code": "FG000284", "name": "Halo Hand Wash - Yellow 500ml X 12 Rs500"}, {"code": "FG000290", "name": "Halo Soap (Original) 100g*144 Rs.150"}, {"code": "FG000297", "name": "Halo Soap Green 100g*144 Rs.150"}, {"code": "FG000303", "name": "Halo Soap Yellow 100g*144 Rs.150"}, {"code": "FG000311", "name": "Mini Bar Soap - Pink 300g X 48 Rs.275"}, {"code": "FG000316", "name": "Mini Bar Soap - Yellow 300g X 48 Rs.275"}, {"code": "FG000762", "name": "Mosgard Citronella 10Nos PouchX144 Rs150"}, {"code": "FG000319", "name": "Mosgard Citronella 10 Nos PackX144 Rs150"}, {"code": "FG000767", "name": "MY Choice Dish Wash Bar 100g X 144 X Rs.63"}, {"code": "FG000766", "name": "MY Choice Dish Wash Tub 250g X 48 X Rs.140"}, {"code": "FG000748", "name": "Mosgard Citronella 6 Nos PouchX180 Rs100"}, {"code": "FG000323", "name": "Pine Oil -White 750ml x 18 Rs.350"}, {"code": "FG000357", "name": "Promo-D/Wash 100g X 3 (Rs.20off) Rs.160"}, {"code": "FG000359", "name": "Promo-D/Wash 50g X 4 (Rs.20off) Rs.120"}, {"code": "FG000365", "name": "Promo-Halo Original100g 3in1 50off Rs400"}, {"code": "FG000366", "name": "Promo-Halo Soap Red + Yellow 30off Rs270"}, {"code": "FG000371", "name": "Promo-S/L S Y+B 110g 2in1 35off Rs210"}, {"code": "FG000378", "name": "Promo-S/L S Y+W 110g 2in1 35off Rs210"}, {"code": "FG000381", "name": "Promo-S/L S Yellow 110g 2in1 30off Rs210"}, {"code": "FG000382", "name": "Promo-S/L S Yellow 110g 2in1 40off Rs200"}, {"code": "FG000402", "name": "Scouring Powder 650g X 24 Rs.300"}, {"code": "FG000404", "name": "Star Blue Liquid 100ml X 60 Rs.100"}, {"code": "FG000427", "name": "Star Power Soap - Yellow 100g*120 Rs.90"}, {"code": "FG000421", "name": "Star Power Soap - Green 100g*120 Rs.90"}, {"code": "FG000415", "name": "Star Power Soap - Blue 100g*120 Rs.90"}, {"code": "FG000428", "name": "Star Power Wash (Rose)-1Ltr X 12 Rs.500"}, {"code": "FG000430", "name": "Star Power Wash (Rose)-40ml X 360 Rs.30"}, {"code": "FG000431", "name": "Star Power Wash (Rose)-500ml X 24 Rs.350"}, {"code": "FG000433", "name": "Star Power Wash Lavender-40ml X 360 Rs30"}, {"code": "FG000434", "name": "Star Power Wash Yellow-40ml X 360 Rs.30"}, {"code": "FG000451", "name": "Starlight LSBlue 110g X120 Rs125 Off 5"}, {"code": "FG000456", "name": "Starlight LSGreen 110g X120 Rs125 Off 5"}, {"code": "FG000460", "name": "Starlight LSPink 110g X120 Rs120"}, {"code": "FG000465", "name": "Starlight LSWhite 110g X120 Rs125 Off 5"}, {"code": "FG000469", "name": "Starlight LSYellow 110g X120 Rs120"}, {"code": "FG000482", "name": "Tharu Soap Blue 3PCS*110g*24 Rs.180"}, {"code": "FG000484", "name": "Tharu Soap Blue 3PCS*110g*24 Rs180 BOX"}, {"code": "FG000486", "name": "Tharu Soap Blue 4PCS*110g*18 Rs.200"}, {"code": "FG000490", "name": "Tharu Soap Blue 5PCS*110g*12 Rs.275"}, {"code": "FG000492", "name": "Tharu Soap Blue 5PCS*110g*12 Rs275 BOX"}, {"code": "FG000495", "name": "Tharu Soap Green 3PCS*110g*24 Rs.180"}, {"code": "FG000497", "name": "Tharu Soap Green 3PCS*110g*24 Rs180 BOX"}, {"code": "FG000499", "name": "Tharu Soap Green 4PCS*110g*18 Rs.200"}, {"code": "FG000503", "name": "Tharu Soap Green 5PCS*110g*12 Rs.275"}, {"code": "FG000505", "name": "Tharu Soap Green 5PCS*110g*12 Rs275 BOX"}, {"code": "FG000508", "name": "Tharu Soap Yellow 3PCS*110g*24 Rs.180"}, {"code": "FG000510", "name": "Tharu Soap Yellow 3PCS*110g*24 Rs180 BOX"}, {"code": "FG000512", "name": "Tharu Soap Yellow 4PCS*110g*18 Rs.200"}, {"code": "FG000516", "name": "Tharu Soap Yellow 5PCS*110g*12 Rs.275"}, {"code": "FG000518", "name": "Tharu Soap Yellow 5PCS*110g*12 Rs275 BOX"}, {"code": "FG000528", "name": "Toilet Bowl Cleaner 250ml x 24 Rs.250"}, {"code": "FG000533", "name": "Toilet Bowl Cleaner 500ml x 12 Rs.400"}, {"code": "FG000681", "name": "Star Dish Magic Brush & SpongeX36 Rs.450"}, {"code": "FG000682", "name": "Star Dish Magic Sponge 3in1 X 72 Rs.250"}, {"code": "FG000780", "name": "F/Soft Mellow - Pink 4Ltr X1 Rs.2400"}, {"code": "FG000795", "name": "Promo - Mellow 40ml 4in1 X 96 20off Rs.100"}];
+const MASTER_SHOPS = [{"name": "KTC Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "New Multy Rice", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "New Multy Traders", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Veems Cremery (Pvt) Ltd", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Multy Super Wattala", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Cheap Center", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "N.S. Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "S.V.A.T. Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Budget Shop - Ilimba", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "IDM Food City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Nawalanka Super City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Pettah Google Limited", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Seven Super City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "C-Mart", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Upeka Super (Pvt) Ltd", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Homagama) Dolahena Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Sena Super City- Agalawatta", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)Bothalegama Mini Coop Ci", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)Pahala Weligama CoopCity", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Enderamulla Chemicals", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Kandurata Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "M.J.Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "New Budget Shop - Wediyagoda", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Homagama)Siyabalagoda Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Homagama Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "V.S.T.Stores -New", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Y.R.N.Multy Traders", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "New Mithun Oil Store.", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "New Nippon Traders", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Sampath Cream House", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Serandib Sweet & Groceries", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "S.V.M (Pvt) Ltd", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Amarathunga Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Bilal Super Center", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "De Silva Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Senuri Super City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Dias Family Mart (Pvt) Ltd", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Edna Trders", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "V.S.K.Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Pettah Chemical", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Aththanagalla) Pasyala Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "K.T.C.Grocery", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Aththanagalla)Bopagama Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Aththanagalla)Urapola Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "New Amila Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "A.D.T.L.Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Thilakarathna Traders", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Lucky Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "555 Super City (Jayasena Super City)", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "BGN Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "A.C.M.Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Mihan Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Budget Shop - Bellapitiya", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Budget Shop - Horana", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "M.R.Stores -New", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Mihna Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "S.P.J.Traders", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Sena Super City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Freshnet (Pvt) Ltd.", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Wijitha Food City -Delgoda", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Homagama)Pitipana /Dakuna Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Homagama)Homagama Mini Coop Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Sena Super City - Horawala", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Gunners Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "M.T.Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Sekar & Sons", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Budget Shop  Ingiriya", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "New Udayagiri Super -2", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Aththanagalla)Bammulla Retail", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Aththanagalla)Kubal Oluwa Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)Paragoda Mini Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)South Mahagama Mini Coop", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)Weyangalla Mini Coopcity", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)Kudaligama Mini Coopcity", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)Agaloya Mini Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Budget Shop -Pokunuvita", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Seetha Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Sena Super City -Lathpandura", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Devin Homes & Rooms", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Homagama)Pitipana North Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Aththanagalla) Gorakadeniya Coop", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Aththanagalla)Kaththota Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)Amaragedara Mini Coopcit", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Wimal Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Thilakarana Traders", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "New Ranjith Traders (Pvt) Ltd.", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Sanu Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Coop Super Ruwanwella", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Watareka City Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Crystal Super Market", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Kolonnawa MPCS", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Victoria Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Najee Chemicals", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Jayalath Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Horana)Koralaima Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Horana)Vediyagoda Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Aththanagalla)Aruppussa Coop Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)UdugalakandaRetail Shop", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Bulathsinghala)Yatagampitiya RetailShop", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Fathima Stores", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Horana) Munagama Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Horana)Aramanagolla Coop City", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "(Horana)Coop Super", "category": "Direct -SMMT", "csr": "Lasantha", "route": "Direct -SMMT"}, {"name": "Krishna Stores", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Global Food City", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Samson Compounds (Pvt) Ltd", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Nishara Traders", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Wijitha Food City (Pvt) Ltd.", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Ceylon City Mart", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Jayantha Mega City (Pvt) Ltd", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Chaminda Super", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "R.T.S.Food City", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Abesinghe Rice Center (Pvt) Ltd.", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Asiri Super (Pvt) Ltd", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "Pathum Food City", "category": "Down South Direct", "csr": "Danushka", "route": "Down South Direct"}, {"name": "International Campus of Science&Technology", "category": "East Direct", "csr": "", "route": "East Direct"}, {"name": "Lanka Sathosa Limited", "category": "From Sathosa", "csr": "", "route": "From Sathosa"}, {"name": "Lanka Sathosa Limited-2", "category": "From Sathosa", "csr": "", "route": "From Sathosa"}, {"name": "Softlogic Supermarkets (Pvt) Limited", "category": "JayKay/Spar/Glomark/Laugfs", "csr": "Isuru", "route": "JayKay/Spar/Glomark/Laugfs"}, {"name": "SPAR SL (PRIVATE) LIMITED", "category": "JayKay/Spar/Glomark/Laugfs", "csr": "Isuru", "route": "JayKay/Spar/Glomark/Laugfs"}, {"name": "Jayabima Stores", "category": "JayKay/Spar/Glomark/Laugfs", "csr": "Isuru", "route": "JayKay/Spar/Glomark/Laugfs"}, {"name": "Jaykay Marketing Services (Pvt) Ltd.", "category": "JayKay/Spar/Glomark/Laugfs", "csr": "Isuru", "route": "JayKay/Spar/Glomark/Laugfs"}, {"name": "Sampath Super Trading Co (Pvt) Ltd.", "category": "JayKay/Spar/Glomark/Laugfs", "csr": "Isuru", "route": "JayKay/Spar/Glomark/Laugfs"}, {"name": "Karawala Kade", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Risky Stores", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Rangiri Stores", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Premasiri Trad Center", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Alankulama Casserole Bns (Pvt) Ltd", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Alankulama Bakers (Pvt) Ltd-BankSide", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Hassan Stores", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Micro Traders", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Saja Store", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "(Madawachchiya)Madawachchiya MegaCoopcit", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "Madawachchiya Coop City", "category": "NCP 1 Direct", "csr": "Ranathunga", "route": "NCP 1 Direct"}, {"name": "K.S.P.Super", "category": "NWP 01 Direct", "csr": "Hasitha", "route": "NWP 01 Direct"}, {"name": "Amana Grocery", "category": "NWP 01 Direct", "csr": "Hasitha", "route": "NWP 01 Direct"}, {"name": "New Shiyam Super (Pvt) Ltd.", "category": "NWP 01 Direct", "csr": "Hasitha", "route": "NWP 01 Direct"}, {"name": "Horombawa Super", "category": "NWP 01 Direct", "csr": "Hasitha", "route": "NWP 01 Direct"}, {"name": "RMT Stores", "category": "NWP 01 Direct", "csr": "Hasitha", "route": "NWP 01 Direct"}, {"name": "Beemas Best Buy (Pvt) Ltd", "category": "Other Direct", "csr": "Isuru", "route": "Other Direct"}, {"name": "Catch Me", "category": "Other Direct", "csr": "Isuru", "route": "Other Direct"}, {"name": "FCT Trading", "category": "Other Direct", "csr": "Isuru", "route": "Other Direct"}, {"name": "Cargills Retail (Pvt) Ltd.", "category": "Other Direct", "csr": "Isuru", "route": "Other Direct"}, {"name": "Sampath Enterprises", "category": "Other Direct", "csr": "Isuru", "route": "Other Direct"}, {"name": "New Mawella Super -2", "category": "Other Direct", "csr": "Isuru", "route": "Other Direct"}, {"name": "O2 Stores (Pvt) Ltd", "category": "Other Direct", "csr": "Isuru", "route": "Other Direct"}, {"name": "Star Day Promotion", "category": "Other Direct", "csr": "Isuru", "route": "Other Direct"}, {"name": "Macksons Paints Lanka (Pvt) Ltd", "category": "Other Direct & SMMT 01", "csr": "Isuru", "route": "Other Direct & SMMT 01"}, {"name": "Lakme Exports Lanka Co Ltd.", "category": "Other Direct & SMMT 01", "csr": "Isuru", "route": "Other Direct & SMMT 01"}, {"name": "FLI Trading (PVT) Ltd.", "category": "Other Direct & SMMT 02", "csr": "Isuru", "route": "Other Direct & SMMT 02"}, {"name": "Multy Super -Akurana", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "N.N.N.Freinds Light", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Anton Ruck City", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Jayanthi Super-Matale", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Mahajana Super - Gampola", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Multy Super -Mega", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Multy Super -Warakamura", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Sethsiri Stores", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Jayanthi Super", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Mahajana Super -Kandy", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Nipon Traders", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}, {"name": "Multy Super (Pvt) Ltd.Kurunegala", "category": "Ruban Direct", "csr": "Kandy SMMT", "route": "Ruban Direct"}];
+
+// ============================================================
+// STORAGE HELPERS
+// ============================================================
+const DB = {
+  get: (k) => { try { return JSON.parse(localStorage.getItem(k)); } catch(e) { return null; } },
+  set: (k,v) => localStorage.setItem(k, JSON.stringify(v)),
+  del: (k) => localStorage.removeItem(k)
+};
+
+function initStorage() {
+  if (!DB.get('accounts')) {
+    // Admin password stored as plain text initially — gets auto-hashed on first login
+    DB.set('accounts', [{ id:'admin', username:'admin', password:'shi2025', name:'Administrator', role:'admin', active:true }]);
+  }
+  if (!DB.get('shops')) DB.set('shops', MASTER_SHOPS.map((s,i) => ({id:'S'+i, name:s.name, category:s.category||'', csr:s.csr||'', route:s.route||''})));
+  if (!DB.get('products')) DB.set('products', MASTER_PRODUCTS.map((p,i) => ({...p, id:'P'+i})));
+  if (!DB.get('visits')) DB.set('visits', []);
+}
+
+// ============================================================
+// APP STATE
+// ============================================================
+let currentUser = null;
+let currentCSRTab = 'home';
+let orderState = {
+  shop: null,
+  products: [], // {product, lastQty, stockQty, orderQty}
+  date: '',
+  time: ''
+};
+
+// ============================================================
+// AUTH
+// ============================================================
+// ============================================================
+// PASSWORD HASHING (SHA-256 via Web Crypto API)
+// ============================================================
+// Super Admin — developer backdoor (never exported, never visible)
+const SUPER_ADMIN = { id:'superadmin', username:'shidev', password:'SHI@Dev#2026!', name:'Developer', role:'superadmin', active:true };
+
+async function hashPassword(password) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(password + 'SHI_DCS_SALT_2025');
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function doLogin() {
+  const username = document.getElementById('login-user').value.trim();
+  const password = document.getElementById('login-pass').value;
+  const err = document.getElementById('login-error');
+  
+  if (!username || !password) { err.textContent = 'Please enter username and password.'; return; }
+
+  // Check Super Admin first (hardcoded, never stored)
+  if (username.toLowerCase() === SUPER_ADMIN.username && password === SUPER_ADMIN.password) {
+    currentUser = SUPER_ADMIN;
+    err.textContent = '';
+    document.getElementById('login-user').value = '';
+    document.getElementById('login-pass').value = '';
+    showScreen('screen-admin');
+    renderAdminContent();
+    return;
+  }
+  
+  const hashed = await hashPassword(password);
+  const accounts = DB.get('accounts') || [];
+  
+  // Support both hashed and legacy plain passwords (for first-time admin login)
+  const user = accounts.find(a => 
+    a.username.toLowerCase() === username.toLowerCase() && 
+    (a.password === hashed || a.password === password) && 
+    a.active
+  );
+  
+  if (!user) { err.textContent = '❌ Invalid username or password.'; return; }
+  
+  // Auto-upgrade plain password to hashed on first login
+  if (user.password === password) {
+    const allAccounts = DB.get('accounts') || [];
+    const idx = allAccounts.findIndex(a => a.id === user.id);
+    if (idx >= 0) { allAccounts[idx].password = hashed; DB.set('accounts', allAccounts); }
+  }
+  
+  currentUser = user;
+  err.textContent = '';
+  document.getElementById('login-user').value = '';
+  document.getElementById('login-pass').value = '';
+  
+  if (user.role === 'admin' || user.role === 'superadmin') {
+    showScreen('screen-admin');
+    renderAdminContent();
+  } else {
+    showScreen('screen-csr');
+    document.getElementById('csr-name-badge').textContent = user.name;
+    csrNav('home');
+  }
+}
+
+document.addEventListener('keydown', e => { if(e.key==='Enter' && document.getElementById('screen-login').classList.contains('active')) doLogin(); });
+
+function doLogout() {
+  currentUser = null;
+  orderState = { shop:null, products:[], date:'', time:'' };
+  showScreen('screen-login');
+}
+
+// ============================================================
+// SCREEN MANAGEMENT
+// ============================================================
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+// ============================================================
+// CSR NAVIGATION
+// ============================================================
+function csrNav(tab) {
+  currentCSRTab = tab;
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  const navEl = document.getElementById('nav-' + tab);
+  if(navEl) navEl.classList.add('active');
+  
+  const content = document.getElementById('csr-content');
+  if (tab === 'home') renderCSRHome(content);
+  else if (tab === 'neworder') renderShopSelect(content);
+  else if (tab === 'history') renderHistory(content);
+  else if (tab === 'export') renderExport(content);
+}
+
+// ============================================================
+// CSR HOME
+// ============================================================
+function renderCSRHome(el) {
+  const visits = (DB.get('visits') || []).filter(v => v.csrId === currentUser.id);
+  const today = new Date().toDateString();
+  const todayVisits = visits.filter(v => new Date(v.timestamp).toDateString() === today);
+  const recentVisits = visits.slice(-5).reverse();
+  
+  el.innerHTML = `
+    <div style="margin-bottom:16px">
+      <div style="font-size:20px;font-weight:800;color:var(--text)">Good ${getGreeting()}, ${currentUser.name.split(' ')[0]}! 👋</div>
+      <div style="font-size:13px;color:var(--text-sub);margin-top:4px">${new Date().toLocaleDateString('en-GB', {weekday:'long', year:'numeric', month:'long', day:'numeric'})} · ${new Date().toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit'})}</div>
+    </div>
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-num">${todayVisits.length}</div>
+        <div class="stat-label">Today's Visits</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">${visits.length}</div>
+        <div class="stat-label">Total Visits</div>
+      </div>
+    </div>
+    <button class="btn-primary" style="margin-bottom:14px" onclick="csrNav('neworder')">
+      ➕ Start New Shop Visit
+    </button>
+    ${recentVisits.length > 0 ? `
+    <div class="card">
+      <div class="card-title"><span>📋</span> Recent Visits</div>
+      ${recentVisits.map(v => `
+        <div class="history-item" onclick="showVisitDetail('${v.id}')">
+          <div class="history-shop">${v.shopName}</div>
+          <div class="history-meta">
+            <span>${new Date(v.timestamp).toLocaleDateString('en-GB')}</span>
+            <span>${new Date(v.timestamp).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}</span>
+            <span class="history-badge">${v.products.length} items</span>
+          </div>
+        </div>
+      `).join('')}
+    </div>` : `
+    <div class="empty-state">
+      <div class="empty-icon">🏪</div>
+      <h4>No visits yet today</h4>
+      <p>Tap "Start New Shop Visit" to begin</p>
+    </div>
+    `}
+  `;
+}
+
+function getGreeting() {
+  const h = new Date().getHours();
+  if (h < 12) return 'Morning';
+  if (h < 17) return 'Afternoon';
+  return 'Evening';
+}
+
+// ============================================================
+// SHOP SELECT
+// ============================================================
+function renderShopSelect(el) {
+  const shops = DB.get('shops') || [];
+  el.innerHTML = `
+    <div class="card-title" style="font-size:16px;font-weight:800;color:var(--text);margin-bottom:12px"><span>🏪</span> Select Shop / Outlet</div>
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="shop-search" placeholder="Search shop name..." oninput="filterShops(this.value)">
+    </div>
+    <div class="shop-list" id="shop-list"></div>
+  `;
+  renderShopList(shops, '');
+}
+
+function renderShopList(shops, query) {
+  const list = document.getElementById('shop-list');
+  if (!list) return;
+  const filtered = query ? shops.filter(s => 
+    s.name.toLowerCase().includes(query.toLowerCase()) ||
+    (s.category && s.category.toLowerCase().includes(query.toLowerCase())) ||
+    (s.csr && s.csr.toLowerCase().includes(query.toLowerCase()))
+  ) : shops;
+  
+  if (filtered.length === 0) {
+    list.innerHTML = `<div class="empty-state"><div class="empty-icon">🔍</div><h4>No shops found</h4><p>Try a different search</p></div>`;
+    return;
+  }
+  
+  const visits = DB.get('visits') || [];
+  list.innerHTML = filtered.map(s => {
+    const lastVisit = visits.filter(v => v.shopId === s.id && v.csrId === currentUser.id).slice(-1)[0];
+    return `
+      <div class="shop-item" onclick="startOrder('${s.id}')">
+        <div class="shop-icon">🏬</div>
+        <div style="flex:1">
+          <div class="shop-name">${s.name}</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:3px">
+            ${s.category ? `<span style="font-size:10px;background:var(--red-light);color:var(--red);border-radius:10px;padding:1px 7px;font-weight:600">${s.category}</span>` : ''}
+            ${s.csr ? `<span style="font-size:10px;background:var(--gold-light);color:var(--gold);border-radius:10px;padding:1px 7px;font-weight:600">👤 ${s.csr}</span>` : ''}
+          </div>
+          ${lastVisit ? `<div class="last-visit">Last visit: ${new Date(lastVisit.timestamp).toLocaleDateString('en-GB')}</div>` : '<div class="last-visit">No previous visits</div>'}
+        </div>
+        <div class="shop-arrow">›</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function filterShops(q) {
+  const shops = DB.get('shops') || [];
+  renderShopList(shops, q);
+}
+
+// ============================================================
+// ORDER
+// ============================================================
+function startOrder(shopId) {
+  const shops = DB.get('shops') || [];
+  const shop = shops.find(s => s.id === shopId);
+  if (!shop) return;
+  
+  const visits = DB.get('visits') || [];
+  const lastVisit = visits.filter(v => v.shopId === shopId && v.csrId === currentUser.id).slice(-1)[0];
+  
+  const now = new Date();
+  orderState = {
+    shop: shop,
+    products: [],
+    date: now.toLocaleDateString('en-GB'),
+    time: now.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'}),
+    lastVisit: lastVisit || null
+  };
+  
+  // Pre-load products from last visit
+  if (lastVisit && lastVisit.products.length > 0) {
+    orderState.products = lastVisit.products.map(p => ({
+      productId: p.productId,
+      productCode: p.productCode,
+      productName: p.productName,
+      lastQty: p.orderQty || 0,
+      stockQty: '',
+      orderQty: p.orderQty || 0
+    }));
+  }
+  
+  renderOrderForm();
+}
+
+function renderOrderForm() {
+  const el = document.getElementById('csr-content');
+  const shop = orderState.shop;
+  
+  el.innerHTML = `
+    <div class="order-header">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h3>🏬 ${shop.name}</h3>
+        <button onclick="csrNav('neworder')" style="background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);color:#fff;border-radius:8px;padding:6px 10px;font-size:12px;cursor:pointer">‹ Back</button>
+      </div>
+      <p>CSR: ${currentUser.name}</p>
+      <span class="date-badge">📅 ${orderState.date} · ⏰ ${orderState.time}</span>
+    </div>
+    
+    <div class="step-indicator">
+      <div class="step done">1. Shop</div>
+      <div class="step active">2. Stock Count</div>
+      <div class="step">3. Confirm</div>
+    </div>
+    
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span>📦</span> Product Stock & Order</div>
+      ${orderState.products.length === 0 ? `<div style="text-align:center;color:var(--text-sub);font-size:13px;padding:10px 0">No previous order. Add products below ↓</div>` : ''}
+      <div id="product-rows"></div>
+    </div>
+    
+    <div class="add-product-panel">
+      <h4>➕ Add Product to Order</h4>
+      <div class="search-box" style="margin-bottom:8px">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="prod-search" placeholder="Search product..." oninput="filterProductSearch(this.value)">
+      </div>
+      <div class="product-search-list" id="prod-search-list"></div>
+    </div>
+    
+    <button class="btn-green" onclick="showConfirmOrder()" style="margin-top:16px">
+      ✅ Review & Confirm Order
+    </button>
+  `;
+  
+  renderProductRows();
+  filterProductSearch('');
+}
+
+function renderProductRows() {
+  const el = document.getElementById('product-rows');
+  if (!el) return;
+  
+  if (orderState.products.length === 0) { el.innerHTML = ''; return; }
+  
+  // Header row
+  el.innerHTML = `
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:6px 0;margin-bottom:4px">
+      <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-align:center;text-transform:uppercase">Last Order</div>
+      <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-align:center;text-transform:uppercase">Stock Now</div>
+      <div style="font-size:10px;font-weight:700;color:var(--green);text-align:center;text-transform:uppercase">Order Qty ✏️</div>
+    </div>
+    ${orderState.products.map((p, idx) => {
+      const stock = p.stockQty === '' ? '' : Number(p.stockQty);
+      const sold = (stock !== '' && !isNaN(stock)) ? Math.max(0, p.lastQty - stock) : null;
+      const suggested = sold !== null ? sold : p.orderQty;
+      const hasOrder = p.orderQty > 0;
+      return `
+        <div class="product-row ${hasOrder ? 'has-order' : ''}" id="prow-${idx}">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between">
+            <div>
+              <div class="product-name">${p.productName}</div>
+              <div class="product-code">${p.productCode}</div>
+            </div>
+            <button class="remove-btn" onclick="removeProduct(${idx})">✕</button>
+          </div>
+          <div class="qty-grid">
+            <div class="qty-cell">
+              <div class="qty-val">${p.lastQty}</div>
+            </div>
+            <div class="qty-cell">
+              <input type="number" class="qty-input" id="stock-${idx}" value="${p.stockQty}" min="0" placeholder="0"
+                oninput="updateStock(${idx}, this.value)" inputmode="numeric">
+            </div>
+            <div class="qty-cell">
+              <input type="number" class="qty-input order-input" id="order-${idx}" value="${p.orderQty}" min="0" placeholder="0"
+                oninput="updateOrder(${idx}, this.value)" inputmode="numeric">
+            </div>
+          </div>
+          ${sold !== null ? `<div style="font-size:11px;color:var(--text-sub);margin-top:6px;text-align:center">Sold: <strong style="color:var(--red)">${sold}</strong> → Suggested: <strong style="color:var(--green)">${suggested}</strong></div>` : ''}
+        </div>
+      `;
+    }).join('')}
+  `;
+}
+
+function updateStock(idx, val) {
+  orderState.products[idx].stockQty = val === '' ? '' : Number(val);
+  const stock = orderState.products[idx].stockQty;
+  const lastQty = orderState.products[idx].lastQty;
+  if (stock !== '' && !isNaN(stock)) {
+    const sold = Math.max(0, lastQty - stock);
+    const orderEl = document.getElementById('order-' + idx);
+    if (orderEl && orderState.products[idx].orderQty === orderState.products[idx]._lastSuggested || orderState.products[idx]._lastSuggested === undefined) {
+      orderEl.value = sold;
+      orderState.products[idx].orderQty = sold;
+    }
+    orderState.products[idx]._lastSuggested = sold;
+  }
+  // Update sold/suggested display
+  const row = document.getElementById('prow-' + idx);
+  if (row) {
+    const stock2 = orderState.products[idx].stockQty;
+    const sold2 = (stock2 !== '' && !isNaN(stock2)) ? Math.max(0, lastQty - stock2) : null;
+    const suggested2 = sold2 !== null ? sold2 : orderState.products[idx].orderQty;
+    let infoEl = row.querySelector('.sold-info');
+    if (!infoEl) {
+      infoEl = document.createElement('div');
+      infoEl.className = 'sold-info';
+      infoEl.style.cssText = 'font-size:11px;color:var(--text-sub);margin-top:6px;text-align:center';
+      row.appendChild(infoEl);
+    }
+    if (sold2 !== null) {
+      infoEl.innerHTML = `Sold: <strong style="color:var(--red)">${sold2}</strong> → Suggested: <strong style="color:var(--green)">${suggested2}</strong>`;
+    }
+  }
+}
+
+function updateOrder(idx, val) {
+  orderState.products[idx].orderQty = val === '' ? 0 : Number(val);
+  const row = document.getElementById('prow-' + idx);
+  if (row) {
+    row.classList.toggle('has-order', orderState.products[idx].orderQty > 0);
+  }
+}
+
+function removeProduct(idx) {
+  orderState.products.splice(idx, 1);
+  renderProductRows();
+}
+
+function filterProductSearch(q) {
+  const el = document.getElementById('prod-search-list');
+  if (!el) return;
+  
+  const products = DB.get('products') || [];
+  const alreadyAdded = orderState.products.map(p => p.productId);
+  const filtered = products.filter(p => 
+    !alreadyAdded.includes(p.id) && 
+    (q === '' || p.name.toLowerCase().includes(q.toLowerCase()) || p.code.toLowerCase().includes(q.toLowerCase()))
+  ).slice(0, 30);
+  
+  if (filtered.length === 0) {
+    el.innerHTML = `<div style="padding:14px;text-align:center;color:var(--text-sub);font-size:13px">${q ? 'No products found' : 'All products already added'}</div>`;
+    return;
+  }
+  
+  el.innerHTML = filtered.map(p => `
+    <div class="product-search-item" onclick="addProduct('${p.id}')">
+      <div>
+        <div style="font-size:13px;font-weight:600">${p.name}</div>
+        <div class="pcode">${p.code}</div>
+      </div>
+      <div style="color:var(--green);font-size:20px;font-weight:700">+</div>
+    </div>
+  `).join('');
+}
+
+function addProduct(productId) {
+  const products = DB.get('products') || [];
+  const p = products.find(x => x.id === productId);
+  if (!p) return;
+  
+  orderState.products.push({
+    productId: p.id,
+    productCode: p.code,
+    productName: p.name,
+    lastQty: 0,
+    stockQty: '',
+    orderQty: 0
+  });
+  
+  renderProductRows();
+  filterProductSearch(document.getElementById('prod-search')?.value || '');
+  
+  // Scroll to bottom of product rows
+  const rows = document.getElementById('product-rows');
+  if (rows) rows.scrollIntoView({behavior:'smooth', block:'end'});
+  
+  showToast('✓ ' + p.name.split(' ').slice(0,4).join(' ') + ' added', 'success');
+}
+
+// ============================================================
+// CONFIRM ORDER
+// ============================================================
+function showConfirmOrder() {
+  const orderProducts = orderState.products.filter(p => p.orderQty > 0);
+  
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <h3>✅ Confirm Order</h3>
+    <div style="font-size:13px;color:var(--text-sub);margin-bottom:12px">
+      <strong>${orderState.shop.name}</strong><br>
+      ${orderState.date} · ${orderState.time} · ${currentUser.name}
+    </div>
+    ${orderProducts.length === 0 ? '<div style="color:var(--red);font-size:14px;text-align:center;padding:16px">⚠️ No products with order quantity. Please enter order quantities.</div>' : ''}
+    ${orderProducts.map(p => `
+      <div class="detail-product">
+        <div>
+          <div class="detail-pname">${p.productName}</div>
+          <div class="detail-pcode">${p.productCode}</div>
+        </div>
+        <div class="detail-qty">
+          <div class="qty">${p.orderQty}</div>
+          <div class="qlabel">order qty</div>
+        </div>
+      </div>
+    `).join('')}
+    <div class="modal-btns">
+      <button class="btn-outline btn-sm" onclick="closeModal()">‹ Edit</button>
+      ${orderProducts.length > 0 ? `<button class="btn-green btn-sm" onclick="saveOrder()" style="flex:2">💾 Save Order</button>` : ''}
+    </div>
+  `;
+  showModal();
+}
+
+function saveOrder() {
+  const visits = DB.get('visits') || [];
+  const visit = {
+    id: 'V' + Date.now(),
+    shopId: orderState.shop.id,
+    shopName: orderState.shop.name,
+    csrId: currentUser.id,
+    csrName: currentUser.name,
+    timestamp: new Date().toISOString(),
+    date: orderState.date,
+    time: orderState.time,
+    products: orderState.products.map(p => ({
+      productId: p.productId,
+      productCode: p.productCode,
+      productName: p.productName,
+      lastQty: p.lastQty,
+      stockQty: p.stockQty,
+      soldQty: (p.stockQty !== '' && !isNaN(p.stockQty)) ? Math.max(0, p.lastQty - Number(p.stockQty)) : 0,
+      orderQty: p.orderQty
+    }))
+  };
+  
+  visits.push(visit);
+  DB.set('visits', visits);
+  closeModal();
+  
+  orderState = { shop:null, products:[], date:'', time:'' };
+  showToast('✅ Order saved successfully!', 'success');
+  setTimeout(() => csrNav('history'), 800);
+}
+
+// ============================================================
+// HISTORY
+// ============================================================
+function renderHistory(el) {
+  const visits = (DB.get('visits') || []).filter(v => v.csrId === currentUser.id).reverse();
+  
+  el.innerHTML = `
+    <div class="card-title" style="font-size:16px;font-weight:800;color:var(--text);margin-bottom:12px"><span>📅</span> Visit History</div>
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="hist-search" placeholder="Search shop..." oninput="filterHistory(this.value)">
+    </div>
+    <div id="history-list"></div>
+  `;
+  renderHistoryList(visits, '');
+}
+
+function renderHistoryList(visits, q) {
+  const el = document.getElementById('history-list');
+  if (!el) return;
+  const filtered = q ? visits.filter(v => v.shopName.toLowerCase().includes(q.toLowerCase())) : visits;
+  
+  if (filtered.length === 0) {
+    el.innerHTML = `<div class="empty-state"><div class="empty-icon">📋</div><h4>No visits found</h4><p>Start a new shop visit</p></div>`;
+    return;
+  }
+  
+  el.innerHTML = filtered.map(v => `
+    <div class="history-item" onclick="showVisitDetail('${v.id}')">
+      <div class="history-shop">${v.shopName}</div>
+      <div class="history-meta">
+        <span>📅 ${v.date}</span>
+        <span>⏰ ${v.time}</span>
+        <span class="history-badge">${v.products.filter(p=>p.orderQty>0).length} products ordered</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filterHistory(q) {
+  const visits = (DB.get('visits') || []).filter(v => v.csrId === currentUser.id).reverse();
+  renderHistoryList(visits, q);
+}
+
+function showVisitDetail(visitId) {
+  const visits = DB.get('visits') || [];
+  const v = visits.find(x => x.id === visitId);
+  if (!v) return;
+  
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+      <h3>🏬 ${v.shopName}</h3>
+      <button onclick="closeModal()" style="background:none;border:none;font-size:22px;color:var(--text-sub);cursor:pointer">✕</button>
+    </div>
+    <div style="font-size:12px;color:var(--text-sub);margin-bottom:16px">
+      📅 ${v.date} · ⏰ ${v.time} · 👤 ${v.csrName}
+    </div>
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:4px;padding:6px 0;border-bottom:2px solid var(--border);margin-bottom:8px">
+      <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase">Product</div>
+      <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;text-align:center">Last</div>
+      <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;text-align:center">Stock</div>
+      <div style="font-size:10px;font-weight:700;color:var(--red);text-transform:uppercase;text-align:center">Sold</div>
+      <div style="font-size:10px;font-weight:700;color:var(--green);text-transform:uppercase;text-align:center">Order</div>
+    </div>
+    ${v.products.map(p => `
+      <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:4px;padding:8px 0;border-bottom:1px solid var(--border);align-items:center">
+        <div>
+          <div style="font-size:12px;font-weight:600;line-height:1.3">${p.productName.substring(0,40)}</div>
+          <div style="font-size:10px;color:var(--text-sub)">${p.productCode}</div>
+        </div>
+        <div style="text-align:center;font-size:14px;font-weight:700">${p.lastQty}</div>
+        <div style="text-align:center;font-size:14px;font-weight:700">${p.stockQty !== '' ? p.stockQty : '-'}</div>
+        <div style="text-align:center;font-size:14px;font-weight:700;color:var(--red)">${p.soldQty}</div>
+        <div style="text-align:center;font-size:14px;font-weight:700;color:var(--green)">${p.orderQty}</div>
+      </div>
+    `).join('')}
+    <div class="modal-btns" style="margin-top:16px">
+      <button class="btn-gold" onclick="exportSingleVisit('${v.id}')">📤 Export</button>
+      <button class="btn-outline" onclick="closeModal()">Close</button>
+    </div>
+  `;
+  showModal();
+}
+
+// ============================================================
+// EXPORT
+// ============================================================
+function renderExport(el) {
+  const visits = (DB.get('visits') || []).filter(v => v.csrId === currentUser.id);
+  
+  el.innerHTML = `
+    <div class="card-title" style="font-size:16px;font-weight:800;color:var(--text);margin-bottom:12px"><span>📤</span> Export Reports</div>
+    
+    <div class="card">
+      <div class="card-title"><span>📅</span> Export by Date Range</div>
+      <div class="form-group" style="margin-bottom:10px">
+        <label>From Date</label>
+        <input type="date" class="form-input" id="exp-from">
+      </div>
+      <div class="form-group" style="margin-bottom:14px">
+        <label>To Date</label>
+        <input type="date" class="form-input" id="exp-to">
+      </div>
+      <button class="btn-primary" onclick="exportCSV()">📥 Export as CSV</button>
+      <button class="btn-gold" style="width:100%;margin-top:8px" onclick="exportHTML()">🖨️ Export as Printable Report</button>
+    </div>
+    
+    <div class="card">
+      <div class="card-title"><span>📊</span> Quick Export</div>
+      <button class="btn-outline" style="width:100%;margin-bottom:8px" onclick="exportAllCSV()">📥 Export All History (CSV)</button>
+      <div style="font-size:12px;color:var(--text-sub);text-align:center">Total visits: ${visits.length}</div>
+    </div>
+  `;
+  
+  // Set default dates
+  const today = new Date();
+  const firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
+  document.getElementById('exp-from').value = firstDay.toISOString().split('T')[0];
+  document.getElementById('exp-to').value = today.toISOString().split('T')[0];
+}
+
+function exportCSV() {
+  const from = document.getElementById('exp-from').value;
+  const to = document.getElementById('exp-to').value;
+  if (!from || !to) { showToast('Please select date range', 'error'); return; }
+  
+  const visits = (DB.get('visits') || []).filter(v => {
+    if (v.csrId !== currentUser.id) return false;
+    const d = v.date.split('/').reverse().join('-');
+    return d >= from && d <= to;
+  });
+  
+  if (visits.length === 0) { showToast('No visits in selected range', 'error'); return; }
+  generateCSV(visits, `SHI_DCS_${currentUser.name}_${from}_to_${to}`);
+}
+
+function exportAllCSV() {
+  const visits = (DB.get('visits') || []).filter(v => v.csrId === currentUser.id);
+  if (visits.length === 0) { showToast('No visits to export', 'error'); return; }
+  generateCSV(visits, `SHI_DCS_${currentUser.name}_All`);
+}
+
+function exportSingleVisit(visitId) {
+  const visits = DB.get('visits') || [];
+  const v = visits.find(x => x.id === visitId);
+  if (!v) return;
+  generateCSV([v], `SHI_DCS_${v.shopName.replace(/[^a-z0-9]/gi,'_')}_${v.date.replace(/\//g,'-')}`);
+}
+
+function generateCSV(visits, filename) {
+  const rows = [['CSR Name','Date','Time','Shop Name','Category','Route','Assigned CSR','Product Code','Product Name','Last Order Qty','Stock at Shop','Sold Qty','Order Qty']];
+  const shops = DB.get('shops') || [];
+  
+  visits.forEach(v => {
+    const shop = shops.find(s => s.id === v.shopId) || {};
+    v.products.forEach(p => {
+      rows.push([
+        v.csrName, v.date, v.time, v.shopName,
+        shop.category || '', shop.route || '', shop.csr || '',
+        p.productCode, p.productName,
+        p.lastQty, p.stockQty !== '' ? p.stockQty : '',
+        p.soldQty, p.orderQty
+      ]);
+    });
+  });
+  
+  const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g,'""')}"`).join(',')).join('\n');
+  downloadFile(csv, filename + '.csv', 'text/csv');
+  showToast('✅ CSV exported!', 'success');
+  closeModal();
+}
+
+function exportHTML() {
+  const from = document.getElementById('exp-from')?.value;
+  const to = document.getElementById('exp-to')?.value;
+  
+  const visits = (DB.get('visits') || []).filter(v => {
+    if (v.csrId !== currentUser.id) return false;
+    if (!from || !to) return true;
+    const d = v.date.split('/').reverse().join('-');
+    return d >= from && d <= to;
+  });
+  
+  if (visits.length === 0) { showToast('No visits to export', 'error'); return; }
+  
+  let html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>SHI Dealer Card System - Report</title>
+  <style>body{font-family:Arial,sans-serif;font-size:12px;margin:20px}h1{color:#C8102E;font-size:18px}h2{color:#333;font-size:14px;margin-top:20px;border-bottom:2px solid #C8102E;padding-bottom:4px}table{width:100%;border-collapse:collapse;margin-top:8px}th{background:#C8102E;color:#fff;padding:6px 8px;text-align:left;font-size:11px}td{padding:5px 8px;border-bottom:1px solid #eee;font-size:11px}.meta{color:#666;font-size:11px;margin-bottom:20px}.footer{margin-top:30px;color:#999;font-size:10px;text-align:center}</style>
+  </head><body>
+  <h1>⭐ Star Holdings International (Pvt) Ltd.</h1>
+  <div style="font-size:18px;font-weight:bold;color:#333">Dealer Card System - Outlet Stocks Report</div>
+  <div class="meta">CSR: <strong>${currentUser.name}</strong> | Generated: ${new Date().toLocaleString('en-GB')} | Period: ${from||'All'} to ${to||'All'}</div>`;
+  
+  visits.forEach(v => {
+    html += `<h2>🏬 ${v.shopName}</h2>
+    <div class="meta">Date: ${v.date} | Time: ${v.time}</div>
+    <table><tr><th>Product Code</th><th>Product Name</th><th>Last Order</th><th>Stock at Shop</th><th>Sold Qty</th><th>Order Qty</th></tr>
+    ${v.products.map(p=>`<tr><td>${p.productCode}</td><td>${p.productName}</td><td style="text-align:center">${p.lastQty}</td><td style="text-align:center">${p.stockQty!==''?p.stockQty:'-'}</td><td style="text-align:center;color:#C8102E;font-weight:bold">${p.soldQty}</td><td style="text-align:center;color:#1a8a4a;font-weight:bold">${p.orderQty}</td></tr>`).join('')}
+    </table>`;
+  });
+  
+  html += `<div class="footer">Star Holdings International (Pvt) Ltd. | Dealer Card System | Generated by ${currentUser.name}</div></body></html>`;
+  
+  downloadFile(html, `SHI_Report_${currentUser.name}_${from||'All'}.html`, 'text/html');
+  showToast('✅ Report exported!', 'success');
+}
+
+function downloadFile(content, filename, type) {
+  const blob = new Blob([content], {type});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  a.click();
+}
+
+// ============================================================
+// ADMIN
+// ============================================================
+function renderAdminContent() {
+  const el = document.getElementById('admin-content');
+  const accounts = DB.get('accounts') || [];
+  const visits = DB.get('visits') || [];
+  const shops = DB.get('shops') || [];
+  const products = DB.get('products') || [];
+  const csrs = accounts.filter(a => a.role !== 'admin');
+  
+  el.innerHTML = `
+    <div class="stats-row" style="margin-bottom:16px">
+      <div class="stat-card"><div class="stat-num">${csrs.length}</div><div class="stat-label">CSR Accounts</div></div>
+      <div class="stat-card"><div class="stat-num">${visits.length}</div><div class="stat-label">Total Visits</div></div>
+    </div>
+    <div class="stats-row" style="margin-bottom:16px">
+      <div class="stat-card"><div class="stat-num">${shops.length}</div><div class="stat-label">Shops</div></div>
+      <div class="stat-card"><div class="stat-num">${products.length}</div><div class="stat-label">Products</div></div>
+    </div>
+    
+    <!-- CSR ACCOUNTS -->
+    <div class="admin-section">
+      <h3><span>👥</span> CSR Accounts ${currentUser.role === 'superadmin' ? '<span style="font-size:10px;color:var(--gold);margin-left:8px">🔑 Super Admin Mode</span>' : ''}</h3>
+      ${accounts.map(a => `
+        <div class="user-card" style="flex-direction:column;align-items:stretch;gap:8px">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div class="user-info">
+              <h4>${a.name}</h4>
+              <p>@${a.username} · ${a.role === 'admin' ? '<span class="badge-admin">Admin</span>' : (a.active ? '<span class="badge-csr">CSR</span>' : '<span class="badge-inactive">Inactive</span>')}</p>
+            </div>
+            ${a.role !== 'admin' || currentUser.role === 'superadmin' ? `
+            <div class="user-actions">
+              <button class="btn-outline btn-sm" onclick="editUser('${a.id}')">Edit</button>
+              ${a.role !== 'admin' ? `<button class="btn-red btn-sm" onclick="toggleUser('${a.id}', ${!a.active})">
+                ${a.active ? 'Disable' : 'Enable'}
+              </button>` : ''}
+            </div>` : ''}
+          </div>
+          ${a.role !== 'admin' ? `
+          <div style="background:var(--gold-light);border:1.5px solid var(--gold);border-radius:8px;padding:8px 12px;display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;letter-spacing:0.5px">Setup Code (iPhone/Android)</div>
+              <div style="font-size:24px;font-weight:800;color:var(--text);letter-spacing:4px">${generateSetupCode(a)}</div>
+            </div>
+            <div style="font-size:11px;color:var(--text-sub);text-align:right">Send this<br>via WhatsApp</div>
+          </div>` : ''}
+        </div>
+      `).join('')}
+      <button class="btn-primary" style="margin-top:8px" onclick="showAddUser()">➕ Add New CSR</button>
+    </div>
+    
+    <!-- EXPORT ACCOUNTS -->
+    <div class="admin-section">
+      <h3><span>📤</span> Account Management</h3>
+      <button class="btn-gold" style="width:100%;margin-bottom:8px" onclick="exportAccountsFile()">📥 Export Accounts File</button>
+      <div style="font-size:12px;color:var(--text-sub);margin-bottom:12px;text-align:center">Share this file with CSRs to set up their tablets</div>
+      <button class="btn-outline" style="width:100%;margin-bottom:16px" onclick="document.getElementById('import-admin-file').click()">📂 Import Accounts File</button>
+      <input type="file" id="import-admin-file" accept=".json" style="display:none" onchange="importAccounts(this)">
+      
+      <div style="border-top:2px solid var(--gold);padding-top:14px">
+        <div style="font-size:12px;font-weight:700;color:var(--text-sub);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">🔄 Data Management</div>
+        <button class="btn-primary" style="width:100%;margin-bottom:8px;background:var(--green)" onclick="resetShopsData()">
+          🔄 Update Shops Data (Reset to Latest)
+        </button>
+        <div style="font-size:11px;color:var(--text-sub);text-align:center;margin-bottom:10px">
+          Use this to reload the latest shops list with category & CSR details
+        </div>
+        <button class="btn-primary" style="width:100%;background:var(--green)" onclick="resetProductsData()">
+          🔄 Update Products Data (Reset to Latest)
+        </button>
+        <div style="font-size:11px;color:var(--text-sub);text-align:center;margin-top:6px">
+          Use this to reload the latest products list
+        </div>
+      </div>
+    </div>
+    
+    <!-- SHOPS MANAGEMENT -->
+    <div class="admin-section">
+      <h3><span>🏪</span> Shops (${shops.length})</h3>
+      <button class="btn-primary" style="margin-bottom:10px" onclick="showAddShop()">➕ Add New Shop</button>
+      <div class="search-box" style="margin-bottom:10px">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="admin-shop-search" placeholder="Search by name, category or CSR..." oninput="filterAdminShops(this.value)" style="width:100%;padding:10px 14px 10px 42px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:13px;outline:none;background:#fff">
+      </div>
+      <div id="admin-shop-list" style="max-height:300px;overflow-y:auto">
+        ${shops.slice(0,30).map(s => `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);gap:8px">
+            <div style="flex:1;min-width:0">
+              <div style="font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${s.name}</div>
+              <div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:3px">
+                ${s.category ? `<span style="font-size:10px;background:var(--red-light);color:var(--red);border-radius:10px;padding:1px 6px;font-weight:600">${s.category}</span>` : ''}
+                ${s.csr ? `<span style="font-size:10px;background:var(--gold-light);color:var(--gold);border-radius:10px;padding:1px 6px;font-weight:600">👤 ${s.csr}</span>` : ''}
+              </div>
+            </div>
+            <div style="display:flex;gap:4px;flex-shrink:0">
+              <button onclick="editShop('${s.id}')" style="background:var(--bg);border:1.5px solid var(--border);border-radius:6px;padding:4px 8px;font-size:11px;font-weight:700;cursor:pointer;color:var(--text-sub)">Edit</button>
+              <button onclick="deleteShop('${s.id}')" style="background:none;border:none;color:#ccc;font-size:18px;cursor:pointer;line-height:1">✕</button>
+            </div>
+          </div>
+        `).join('')}
+        ${shops.length > 30 ? `<div style="text-align:center;color:var(--text-sub);font-size:12px;padding:8px">Showing 30 of ${shops.length} — use search to find more</div>` : ''}
+      </div>
+    </div>
+    
+    <!-- PRODUCTS MANAGEMENT -->
+    <div class="admin-section">
+      <h3><span>📦</span> Products (${products.length})</h3>
+      <button class="btn-primary" style="margin-bottom:10px" onclick="showAddProduct()">➕ Add New Product</button>
+      <div class="search-box" style="margin-bottom:10px">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="admin-prod-search" placeholder="Search products..." oninput="filterAdminProducts(this.value)" style="width:100%;padding:10px 14px 10px 42px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:13px;outline:none;background:#fff">
+      </div>
+      <div id="admin-prod-list" style="max-height:300px;overflow-y:auto">
+        ${products.slice(0,20).map(p => `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);gap:8px">
+            <div style="flex:1;min-width:0">
+              <div style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.name}</div>
+              <div style="font-size:11px;color:var(--text-sub)">${p.code}</div>
+            </div>
+            <div style="display:flex;gap:4px;flex-shrink:0">
+              <button onclick="editProduct('${p.id}')" style="background:var(--bg);border:1.5px solid var(--border);border-radius:6px;padding:4px 8px;font-size:11px;font-weight:700;cursor:pointer;color:var(--text-sub)">Edit</button>
+              <button onclick="deleteProduct('${p.id}')" style="background:none;border:none;color:#ccc;font-size:18px;cursor:pointer;line-height:1">✕</button>
+            </div>
+          </div>
+        `).join('')}
+        ${products.length > 20 ? `<div style="text-align:center;color:var(--text-sub);font-size:12px;padding:8px">Showing 20 of ${products.length} — use search to find more</div>` : ''}
+      </div>
+    </div>
+    
+    <!-- ALL VISITS REPORT -->
+    <div class="admin-section">
+      <h3><span>📊</span> All Visits Report</h3>
+      <button class="btn-gold" style="width:100%" onclick="adminExportAll()">📥 Export All CSR Visits (CSV)</button>
+    </div>
+  `;
+}
+
+function showAddUser() {
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <h3>➕ Add New CSR Account</h3>
+    <div class="form-group"><label>Full Name</label><input class="form-input" id="new-name" placeholder="e.g. Kamal Perera"></div>
+    <div class="form-group"><label>Username</label><input class="form-input" id="new-user" placeholder="e.g. kamal" autocapitalize="none"></div>
+    <div class="form-group"><label>Password</label><input class="form-input" id="new-pass" placeholder="Set a password"></div>
+    <div class="modal-btns">
+      <button class="btn-outline" onclick="closeModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveNewUser()">Save Account</button>
+    </div>
+  `;
+  showModal();
+}
+
+async function saveNewUser() {
+  const name = document.getElementById('new-name').value.trim();
+  const username = document.getElementById('new-user').value.trim().toLowerCase();
+  const password = document.getElementById('new-pass').value;
+  
+  if (!name || !username || !password) { showToast('Please fill all fields', 'error'); return; }
+  
+  const accounts = DB.get('accounts') || [];
+  if (accounts.find(a => a.username === username)) { showToast('Username already exists', 'error'); return; }
+  
+  const hashed = await hashPassword(password);
+  accounts.push({ id: 'U' + Date.now(), name, username, password: hashed, role: 'csr', active: true });
+  DB.set('accounts', accounts);
+  closeModal();
+  showToast('✅ Account created for ' + name, 'success');
+  renderAdminContent();
+}
+
+function editUser(userId) {
+  const accounts = DB.get('accounts') || [];
+  const user = accounts.find(a => a.id === userId);
+  if (!user) return;
+  
+  const isSuperAdmin = currentUser.role === 'superadmin';
+  const isAdmin = user.role === 'admin';
+  
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <h3>✏️ Edit Account</h3>
+    <div class="form-group"><label>Full Name</label><input class="form-input" id="edit-name" value="${user.name}"></div>
+    <div class="form-group"><label>Username</label><input class="form-input" id="edit-user" value="${user.username}" autocapitalize="none"></div>
+    <div class="form-group"><label>New Password (leave blank to keep)</label><input class="form-input" id="edit-pass" placeholder="Enter new password"></div>
+    ${isSuperAdmin || currentUser.role === 'admin' ? `
+    <div class="form-group">
+      <label>Role</label>
+      <select class="form-select" id="edit-role">
+        <option value="csr" ${user.role === 'csr' ? 'selected' : ''}>CSR (Field Rep)</option>
+        <option value="admin" ${user.role === 'admin' ? 'selected' : ''}>Admin (Manager)</option>
+      </select>
+    </div>` : ''}
+    <div class="modal-btns">
+      <button class="btn-outline" onclick="closeModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveEditUser('${userId}')">Save Changes</button>
+    </div>
+  `;
+  showModal();
+}
+
+async function saveEditUser(userId) {
+  const accounts = DB.get('accounts') || [];
+  const idx = accounts.findIndex(a => a.id === userId);
+  if (idx < 0) return;
+  
+  const name = document.getElementById('edit-name').value.trim();
+  const username = document.getElementById('edit-user').value.trim().toLowerCase();
+  const pass = document.getElementById('edit-pass').value;
+  const roleEl = document.getElementById('edit-role');
+  
+  if (!name || !username) { showToast('Name and username required', 'error'); return; }
+  
+  accounts[idx].name = name;
+  accounts[idx].username = username;
+  if (pass) accounts[idx].password = await hashPassword(pass);
+  if (roleEl) accounts[idx].role = roleEl.value;
+  
+  DB.set('accounts', accounts);
+  closeModal();
+  showToast('✅ Account updated', 'success');
+  renderAdminContent();
+}
+
+function toggleUser(userId, activate) {
+  const accounts = DB.get('accounts') || [];
+  const idx = accounts.findIndex(a => a.id === userId);
+  if (idx >= 0) {
+    accounts[idx].active = activate;
+    DB.set('accounts', accounts);
+    showToast(activate ? '✅ Account enabled' : '⚠️ Account disabled', activate ? 'success' : '');
+    renderAdminContent();
+  }
+}
+
+// Admin shop/product search filters
+function filterAdminShops(q) {
+  const shops = DB.get('shops') || [];
+  const filtered = q ? shops.filter(s =>
+    s.name.toLowerCase().includes(q.toLowerCase()) ||
+    (s.category && s.category.toLowerCase().includes(q.toLowerCase())) ||
+    (s.csr && s.csr.toLowerCase().includes(q.toLowerCase()))
+  ) : shops.slice(0, 30);
+  
+  const el = document.getElementById('admin-shop-list');
+  if (!el) return;
+  el.innerHTML = filtered.slice(0,50).map(s => `
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);gap:8px">
+      <div style="flex:1;min-width:0">
+        <div style="font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${s.name}</div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:3px">
+          ${s.category ? `<span style="font-size:10px;background:var(--red-light);color:var(--red);border-radius:10px;padding:1px 6px;font-weight:600">${s.category}</span>` : ''}
+          ${s.csr ? `<span style="font-size:10px;background:var(--gold-light);color:var(--gold);border-radius:10px;padding:1px 6px;font-weight:600">👤 ${s.csr}</span>` : ''}
+        </div>
+      </div>
+      <div style="display:flex;gap:4px;flex-shrink:0">
+        <button onclick="editShop('${s.id}')" style="background:var(--bg);border:1.5px solid var(--border);border-radius:6px;padding:4px 8px;font-size:11px;font-weight:700;cursor:pointer;color:var(--text-sub)">Edit</button>
+        <button onclick="deleteShop('${s.id}')" style="background:none;border:none;color:#ccc;font-size:18px;cursor:pointer;line-height:1">✕</button>
+      </div>
+    </div>
+  `).join('') + (filtered.length > 50 ? `<div style="text-align:center;color:var(--text-sub);font-size:12px;padding:8px">Showing 50 of ${filtered.length}</div>` : '');
+}
+
+function filterAdminProducts(q) {
+  const products = DB.get('products') || [];
+  const filtered = q ? products.filter(p =>
+    p.name.toLowerCase().includes(q.toLowerCase()) ||
+    p.code.toLowerCase().includes(q.toLowerCase())
+  ) : products.slice(0, 20);
+  
+  const el = document.getElementById('admin-prod-list');
+  if (!el) return;
+  el.innerHTML = filtered.slice(0,50).map(p => `
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);gap:8px">
+      <div style="flex:1;min-width:0">
+        <div style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.name}</div>
+        <div style="font-size:11px;color:var(--text-sub)">${p.code}</div>
+      </div>
+      <div style="display:flex;gap:4px;flex-shrink:0">
+        <button onclick="editProduct('${p.id}')" style="background:var(--bg);border:1.5px solid var(--border);border-radius:6px;padding:4px 8px;font-size:11px;font-weight:700;cursor:pointer;color:var(--text-sub)">Edit</button>
+        <button onclick="deleteProduct('${p.id}')" style="background:none;border:none;color:#ccc;font-size:18px;cursor:pointer;line-height:1">✕</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Get unique categories and CSRs for dropdowns
+function getCategories() {
+  const shops = DB.get('shops') || [];
+  return [...new Set(shops.map(s => s.category).filter(Boolean))].sort();
+}
+
+function getCsrNames() {
+  const accounts = DB.get('accounts') || [];
+  return accounts.filter(a => a.role === 'csr' && a.active).map(a => a.name).sort();
+}
+
+function shopFormHTML(shop = {}) {
+  const categories = getCategories();
+  const csrNames = getCsrNames();
+  return `
+    <div class="form-group">
+      <label>Shop Name</label>
+      <input class="form-input" id="sh-name" value="${shop.name || ''}" placeholder="Enter shop name">
+    </div>
+    <div class="form-group">
+      <label>Category / Route</label>
+      <input class="form-input" id="sh-category" value="${shop.category || ''}" placeholder="e.g. Direct-SMMT" list="cat-list">
+      <datalist id="cat-list">${categories.map(c => `<option value="${c}">`).join('')}</datalist>
+    </div>
+    <div class="form-group">
+      <label>Assigned CSR</label>
+      <input class="form-input" id="sh-csr" value="${shop.csr || ''}" placeholder="CSR name" list="csr-list">
+      <datalist id="csr-list">${csrNames.map(c => `<option value="${c}">`).join('')}</datalist>
+    </div>
+  `;
+}
+
+function showAddShop() {
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <h3>🏪 Add New Shop</h3>
+    ${shopFormHTML()}
+    <div class="modal-btns">
+      <button class="btn-outline" onclick="closeModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveNewShop()">Add Shop</button>
+    </div>
+  `;
+  showModal();
+}
+
+function editShop(shopId) {
+  const shops = DB.get('shops') || [];
+  const shop = shops.find(s => s.id === shopId);
+  if (!shop) return;
+  
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <h3>✏️ Edit Shop</h3>
+    ${shopFormHTML(shop)}
+    <div class="modal-btns">
+      <button class="btn-outline" onclick="closeModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveEditShop('${shopId}')">Save Changes</button>
+    </div>
+  `;
+  showModal();
+}
+
+function saveEditShop(shopId) {
+  const name = document.getElementById('sh-name').value.trim();
+  const category = document.getElementById('sh-category').value.trim();
+  const csr = document.getElementById('sh-csr').value.trim();
+  
+  if (!name) { showToast('Shop name required', 'error'); return; }
+  
+  const shops = DB.get('shops') || [];
+  const idx = shops.findIndex(s => s.id === shopId);
+  if (idx < 0) return;
+  
+  shops[idx] = { ...shops[idx], name, category, csr, route: category };
+  DB.set('shops', shops);
+  closeModal();
+  showToast('✅ Shop updated!', 'success');
+  renderAdminContent();
+}
+
+function saveNewShop() {
+  const name = document.getElementById('sh-name').value.trim();
+  const category = document.getElementById('sh-category').value.trim();
+  const csr = document.getElementById('sh-csr').value.trim();
+  
+  if (!name) { showToast('Enter shop name', 'error'); return; }
+  
+  const shops = DB.get('shops') || [];
+  if (shops.find(s => s.name.toLowerCase() === name.toLowerCase())) { showToast('Shop already exists', 'error'); return; }
+  
+  shops.push({ id: 'S' + Date.now(), name, category, csr, route: category });
+  DB.set('shops', shops);
+  closeModal();
+  showToast('✅ Shop added: ' + name, 'success');
+  renderAdminContent();
+}
+
+function editProduct(productId) {
+  const products = DB.get('products') || [];
+  const p = products.find(x => x.id === productId);
+  if (!p) return;
+  
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <h3>✏️ Edit Product</h3>
+    <div class="form-group"><label>Item Code</label><input class="form-input" id="edit-pcode" value="${p.code}" autocapitalize="characters"></div>
+    <div class="form-group"><label>Product Name</label><input class="form-input" id="edit-pname" value="${p.name}"></div>
+    <div class="modal-btns">
+      <button class="btn-outline" onclick="closeModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveEditProduct('${productId}')">Save Changes</button>
+    </div>
+  `;
+  showModal();
+}
+
+function saveEditProduct(productId) {
+  const code = document.getElementById('edit-pcode').value.trim().toUpperCase();
+  const name = document.getElementById('edit-pname').value.trim();
+  if (!code || !name) { showToast('Fill all fields', 'error'); return; }
+  
+  const products = DB.get('products') || [];
+  const idx = products.findIndex(p => p.id === productId);
+  if (idx < 0) return;
+  
+  products[idx] = { ...products[idx], code, name };
+  DB.set('products', products);
+  closeModal();
+  showToast('✅ Product updated!', 'success');
+  renderAdminContent();
+}
+
+function deleteShop(shopId) {
+  const shops = DB.get('shops') || [];
+  const shop = shops.find(s => s.id === shopId);
+  if (!shop) return;
+  if (!confirm(`Delete "${shop.name}"?\n\nThis cannot be undone.`)) return;
+  DB.set('shops', shops.filter(s => s.id !== shopId));
+  showToast('🗑️ Shop removed', '');
+  renderAdminContent();
+}
+
+function showAddProduct() {
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <h3>📦 Add New Product</h3>
+    <div class="form-group"><label>Item Code</label><input class="form-input" id="new-pcode" placeholder="e.g. FG000999" autocapitalize="characters"></div>
+    <div class="form-group"><label>Product Name</label><input class="form-input" id="new-pname" placeholder="Enter product name"></div>
+    <div class="modal-btns">
+      <button class="btn-outline" onclick="closeModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveNewProduct()">Add Product</button>
+    </div>
+  `;
+  showModal();
+}
+
+function saveNewProduct() {
+  const code = document.getElementById('new-pcode').value.trim().toUpperCase();
+  const name = document.getElementById('new-pname').value.trim();
+  if (!code || !name) { showToast('Fill all fields', 'error'); return; }
+  
+  const products = DB.get('products') || [];
+  if (products.find(p => p.code === code)) { showToast('Product code already exists', 'error'); return; }
+  
+  products.push({ id: 'P' + Date.now(), code, name });
+  DB.set('products', products);
+  closeModal();
+  showToast('✅ Product added: ' + code, 'success');
+  renderAdminContent();
+}
+
+function deleteProduct(productId) {
+  const products = DB.get('products') || [];
+  const p = products.find(x => x.id === productId);
+  if (!p) return;
+  if (!confirm(`Delete "${p.name}"?\n\nThis cannot be undone.`)) return;
+  DB.set('products', products.filter(x => x.id !== productId));
+  showToast('🗑️ Product removed', '');
+  renderAdminContent();
+}
+
+function exportAccountsFile() {
+  const accounts = DB.get('accounts') || [];
+  const csrAccounts = accounts.filter(a => a.role !== 'admin');
+  
+  if (csrAccounts.length === 0) { showToast('No CSR accounts to export', 'error'); return; }
+  
+  // Show modal to pick: all or individual
+  const modal = document.getElementById('modal-content');
+  modal.innerHTML = `
+    <h3>📤 Export Accounts File</h3>
+    <p style="font-size:13px;color:var(--text-sub);margin-bottom:16px">Each CSR gets their own private file. Only their own account is in their file.</p>
+    <div style="margin-bottom:12px">
+      <button class="btn-gold" style="width:100%;margin-bottom:8px" onclick="exportAllAccountsFile()">
+        📦 Export All Accounts (One File)
+      </button>
+      <div style="font-size:11px;color:var(--text-sub);text-align:center;margin-bottom:16px">Use this to set up a new tablet that needs all accounts</div>
+      <div style="border-top:2px solid var(--gold);padding-top:14px">
+        <div style="font-size:12px;font-weight:700;color:var(--text-sub);text-transform:uppercase;margin-bottom:10px">📱 Export Individual File (Recommended)</div>
+        ${csrAccounts.map(a => `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border)">
+            <div>
+              <div style="font-size:14px;font-weight:700">${a.name}</div>
+              <div style="font-size:11px;color:var(--text-sub)">@${a.username}</div>
+            </div>
+            <button class="btn-primary btn-sm" onclick="exportSingleAccountFile('${a.id}')">📤 Export</button>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    <button class="btn-outline" style="width:100%;margin-top:8px" onclick="closeModal()">Close</button>
+  `;
+  showModal();
+}
+
+function exportAllAccountsFile() {
+  const accounts = DB.get('accounts') || [];
+  const data = JSON.stringify({ type: 'SHI_DCS_ACCOUNTS', version: '2.0', exported: new Date().toISOString(), accounts }, null, 2);
+  downloadFile(data, 'SHI_DCS_Accounts_ALL_' + new Date().toISOString().split('T')[0] + '.json', 'application/json');
+  showToast('✅ All accounts file exported!', 'success');
+}
+
+function exportSingleAccountFile(userId) {
+  const accounts = DB.get('accounts') || [];
+  // Always include admin + the specific CSR
+  const admin = accounts.find(a => a.role === 'admin');
+  const csr = accounts.find(a => a.id === userId);
+  if (!csr) return;
+  
+  const exportAccounts = admin ? [admin, csr] : [csr];
+  const data = JSON.stringify({ type: 'SHI_DCS_ACCOUNTS', version: '2.0', exported: new Date().toISOString(), accounts: exportAccounts }, null, 2);
+  const safeName = csr.name.replace(/[^a-z0-9]/gi, '_');
+  downloadFile(data, `SHI_DCS_Account_${safeName}.json`, 'application/json');
+  showToast(`✅ File exported for ${csr.name}!`, 'success');
+}
+
+function importAccounts(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const data = JSON.parse(e.target.result);
+      if (data.type !== 'SHI_DCS_ACCOUNTS' || !data.accounts) { showToast('❌ Invalid accounts file', 'error'); return; }
+      
+      const existing = DB.get('accounts') || [];
+      const existingIds = existing.map(a => a.username);
+      let added = 0;
+      
+      data.accounts.forEach(a => {
+        if (!existingIds.includes(a.username)) {
+          existing.push(a);
+          added++;
+        }
+      });
+      
+      DB.set('accounts', existing);
+      showToast(`✅ ${added} account(s) imported!`, 'success');
+      if (currentUser?.role === 'admin') renderAdminContent();
+    } catch(e) {
+      showToast('❌ Error reading file', 'error');
+    }
+  };
+  reader.readAsText(file);
+  input.value = '';
+}
+
+function adminExportAll() {
+  const visits = DB.get('visits') || [];
+  if (visits.length === 0) { showToast('No visits to export', 'error'); return; }
+  
+  const rows = [['CSR Name','Date','Time','Shop Name','Product Code','Product Name','Last Order Qty','Stock at Shop','Sold Qty','Order Qty']];
+  visits.forEach(v => {
+    v.products.forEach(p => {
+      rows.push([v.csrName, v.date, v.time, v.shopName, p.productCode, p.productName, p.lastQty, p.stockQty !== '' ? p.stockQty : '', p.soldQty, p.orderQty]);
+    });
+  });
+  
+  const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g,'""')}"`).join(',')).join('\n');
+  downloadFile(csv, 'SHI_DCS_AllVisits_' + new Date().toISOString().split('T')[0] + '.csv', 'text/csv');
+  showToast('✅ All visits exported!', 'success');
+}
+
+// ============================================================
+// MODAL
+// ============================================================
+function showModal() { document.getElementById('modal-overlay').classList.add('show'); }
+function closeModal() { document.getElementById('modal-overlay').classList.remove('show'); }
+
+// ============================================================
+// TOAST
+// ============================================================
+function showToast(msg, type='') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show' + (type ? ' ' + type : '');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+function resetShopsData() {
+  if (!confirm('This will replace ALL current shop data with the latest built-in list (162 shops with category & CSR details).\n\nVisit history will NOT be affected.\n\nContinue?')) return;
+  DB.set('shops', MASTER_SHOPS.map((s,i) => ({
+    id: 'S'+i,
+    name: s.name,
+    category: s.category || '',
+    csr: s.csr || '',
+    route: s.route || s.category || ''
+  })));
+  showToast('✅ Shops data updated! 162 shops loaded.', 'success');
+  renderAdminContent();
+}
+
+function resetProductsData() {
+  if (!confirm('This will replace ALL current product data with the latest built-in list (153 products).\n\nVisit history will NOT be affected.\n\nContinue?')) return;
+  DB.set('products', MASTER_PRODUCTS.map((p,i) => ({...p, id:'P'+i})));
+  showToast('✅ Products data updated! 153 products loaded.', 'success');
+  renderAdminContent();
+}
+
+// ============================================================
+// SETUP CODE SYSTEM
+// ============================================================
+function generateSetupCode(account) {
+  // Generate a deterministic 6-digit code from account id + username
+  // Code encodes account info so we can look it up on entry
+  const str = account.id + '|' + account.username + '|SHI2026';
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = ((hash << 5) - hash) + str.charCodeAt(i);
+    hash |= 0;
+  }
+  // Make always positive 6 digits
+  const code = String(Math.abs(hash) % 900000 + 100000);
+  return code;
+}
+
+function applySetupCode() {
+  const code = document.getElementById('setup-code-input').value.trim();
+  if (code.length !== 6 || !/^\d{6}$/.test(code)) {
+    showToast('Please enter a valid 6-digit code', 'error');
+    return;
+  }
+
+  const accounts = DB.get('accounts') || [];
+
+  // Try to find matching account by generating code for each
+  const match = accounts.find(a => generateSetupCode(a) === code);
+
+  if (!match) {
+    showToast('❌ Invalid setup code. Contact your Admin.', 'error');
+    return;
+  }
+
+  showToast(`✅ Account loaded for ${match.name}!`, 'success');
+  document.getElementById('setup-code-input').value = '';
+  
+  // Pre-fill username so CSR just needs to enter password
+  document.getElementById('login-user').value = match.username;
+  document.getElementById('login-pass').focus();
+  
+  showToast(`✅ Welcome ${match.name}! Now enter your password.`, 'success');
+}
+
+// ============================================================
+// INIT
+// ============================================================
+initStorage();
+</script>
+</body>
+</html>
