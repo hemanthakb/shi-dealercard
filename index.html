@@ -1110,32 +1110,40 @@ function renderAdminContent() {
     <!-- CSR ACCOUNTS -->
     <div class="admin-section">
       <h3><span>👥</span> CSR Accounts ${currentUser.role === 'superadmin' ? '<span style="font-size:10px;color:var(--gold);margin-left:8px">🔑 Super Admin Mode</span>' : ''}</h3>
-      ${accounts.map(a => `
-        <div class="user-card" style="flex-direction:column;align-items:stretch;gap:8px">
-          <div style="display:flex;align-items:center;justify-content:space-between">
-            <div class="user-info">
-              <h4>${a.name}</h4>
-              <p>@${a.username} · ${a.role === 'admin' ? '<span class="badge-admin">Admin</span>' : (a.active ? '<span class="badge-csr">CSR</span>' : '<span class="badge-inactive">Inactive</span>')}</p>
+      
+      <div class="search-box" style="margin-bottom:10px">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="admin-csr-search" placeholder="Search CSR by name or username..." oninput="filterAdminCSRs(this.value)" style="width:100%;padding:10px 14px 10px 42px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:13px;outline:none;background:#fff">
+      </div>
+      
+      <div id="admin-csr-list" style="max-height:320px;overflow-y:auto;margin-bottom:10px">
+        ${accounts.map(a => `
+          <div class="user-card" style="flex-direction:column;align-items:stretch;gap:8px;margin-bottom:8px">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div class="user-info">
+                <h4>${a.name}</h4>
+                <p>@${a.username} · ${a.role === 'admin' ? '<span class="badge-admin">Admin</span>' : (a.active ? '<span class="badge-csr">CSR</span>' : '<span class="badge-inactive">Inactive</span>')}</p>
+              </div>
+              ${a.role !== 'admin' || currentUser.role === 'superadmin' ? `
+              <div class="user-actions">
+                <button class="btn-outline btn-sm" onclick="editUser('${a.id}')">Edit</button>
+                ${a.role !== 'admin' ? `<button class="btn-red btn-sm" onclick="toggleUser('${a.id}', ${!a.active})">
+                  ${a.active ? 'Disable' : 'Enable'}
+                </button>` : ''}
+              </div>` : ''}
             </div>
-            ${a.role !== 'admin' || currentUser.role === 'superadmin' ? `
-            <div class="user-actions">
-              <button class="btn-outline btn-sm" onclick="editUser('${a.id}')">Edit</button>
-              ${a.role !== 'admin' ? `<button class="btn-red btn-sm" onclick="toggleUser('${a.id}', ${!a.active})">
-                ${a.active ? 'Disable' : 'Enable'}
-              </button>` : ''}
+            ${a.role !== 'admin' ? `
+            <div style="background:var(--gold-light);border:1.5px solid var(--gold);border-radius:8px;padding:8px 12px;display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;letter-spacing:0.5px">Setup Code</div>
+                <div style="font-size:24px;font-weight:800;color:var(--text);letter-spacing:4px">${generateSetupCode(a)}</div>
+              </div>
+              <div style="font-size:11px;color:var(--text-sub);text-align:right">Send via<br>WhatsApp</div>
             </div>` : ''}
           </div>
-          ${a.role !== 'admin' ? `
-          <div style="background:var(--gold-light);border:1.5px solid var(--gold);border-radius:8px;padding:8px 12px;display:flex;align-items:center;justify-content:space-between">
-            <div>
-              <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;letter-spacing:0.5px">Setup Code (iPhone/Android)</div>
-              <div style="font-size:24px;font-weight:800;color:var(--text);letter-spacing:4px">${generateSetupCode(a)}</div>
-            </div>
-            <div style="font-size:11px;color:var(--text-sub);text-align:right">Send this<br>via WhatsApp</div>
-          </div>` : ''}
-        </div>
-      `).join('')}
-      <button class="btn-primary" style="margin-top:8px" onclick="showAddUser()">➕ Add New CSR</button>
+        `).join('')}
+      </div>
+      <button class="btn-primary" style="margin-top:4px" onclick="showAddUser()">➕ Add New CSR</button>
     </div>
     
     <!-- EXPORT ACCOUNTS -->
@@ -1319,6 +1327,43 @@ function toggleUser(userId, activate) {
     showToast(activate ? '✅ Account enabled' : '⚠️ Account disabled', activate ? 'success' : '');
     renderAdminContent();
   }
+}
+
+function filterAdminCSRs(q) {
+  const accounts = DB.get('accounts') || [];
+  const filtered = q ? accounts.filter(a =>
+    a.name.toLowerCase().includes(q.toLowerCase()) ||
+    a.username.toLowerCase().includes(q.toLowerCase())
+  ) : accounts;
+
+  const el = document.getElementById('admin-csr-list');
+  if (!el) return;
+
+  el.innerHTML = filtered.map(a => `
+    <div class="user-card" style="flex-direction:column;align-items:stretch;gap:8px;margin-bottom:8px">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div class="user-info">
+          <h4>${a.name}</h4>
+          <p>@${a.username} · ${a.role === 'admin' ? '<span class="badge-admin">Admin</span>' : (a.active ? '<span class="badge-csr">CSR</span>' : '<span class="badge-inactive">Inactive</span>')}</p>
+        </div>
+        ${a.role !== 'admin' || currentUser.role === 'superadmin' ? `
+        <div class="user-actions">
+          <button class="btn-outline btn-sm" onclick="editUser('${a.id}')">Edit</button>
+          ${a.role !== 'admin' ? `<button class="btn-red btn-sm" onclick="toggleUser('${a.id}', ${!a.active})">
+            ${a.active ? 'Disable' : 'Enable'}
+          </button>` : ''}
+        </div>` : ''}
+      </div>
+      ${a.role !== 'admin' ? `
+      <div style="background:var(--gold-light);border:1.5px solid var(--gold);border-radius:8px;padding:8px 12px;display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;letter-spacing:0.5px">Setup Code</div>
+          <div style="font-size:24px;font-weight:800;color:var(--text);letter-spacing:4px">${generateSetupCode(a)}</div>
+        </div>
+        <div style="font-size:11px;color:var(--text-sub);text-align:right">Send via<br>WhatsApp</div>
+      </div>` : ''}
+    </div>
+  `).join('') || '<div style="text-align:center;color:var(--text-sub);padding:16px;font-size:13px">No CSRs found</div>';
 }
 
 // Admin shop/product search filters
